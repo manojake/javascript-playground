@@ -1,0 +1,15 @@
+# Get the base64 encoded credentials from the secret variable 
+kubectl get secret rewards-credentials --namespace telus-rewards  -o jsonpath='{.data}'
+
+# Save the decoded secrets to a text file
+echo BASE_VALUE | base64 --decode > rewards-cred-stage.json
+
+# Verify that the decoded value is correct by encoding it again and comparing with the obtained value
+echo  $(<rewards-cred-stage.json) | base64
+
+# Encode the edited secret value by avoiding new line and line breaks
+verify echo -n $(<rewards-cred-stage.json) | base64 | tr -d \\n
+
+
+# Apply the newly generated encoded value back kubernetis
+kubectl get secret rewards-credentials --namespace telus-rewards -o json | jq '.data["rewards-credentials"]="NEW_BASE64_ENCODED_VALUE"' | kubectl apply -f -
