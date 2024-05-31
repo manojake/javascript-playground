@@ -20,3 +20,24 @@ A class selector is more specific; it will select only the elements on a page th
 ## Inheritance
  if you set a color and font-family on an element, every element inside it will also be styled with that color and font, unless you've applied different color and font values directly to them
 
+ Controlling inheritance
+
+CSS provides five special universal property values for controlling inheritance. Every CSS property accepts these values.
+
+**inherit**
+
+    Sets the property value applied to a selected element to be the same as that of its parent element. Effectively, this "turns on inheritance".
+initial
+
+    Sets the property value applied to a selected element to the initial value of that property.
+revert
+
+    Resets the property value applied to a selected element to the browser's default styling rather than the defaults applied to that property. This value acts like unset in many cases.
+revert-layer
+
+    Resets the property value applied to a selected element to the value established in a previous cascade layer.
+unset
+
+    Resets the property to its natural value, which means that if the property is naturally inherited it acts like inherit, otherwise it acts like initial.
+
+
