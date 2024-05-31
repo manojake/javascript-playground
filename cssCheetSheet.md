@@ -24,7 +24,7 @@ A class selector is more specific; it will select only the elements on a page th
 
 CSS provides five special universal property values for controlling inheritance. Every CSS property accepts these values.
 
-**inherit**
+inherit
 
     Sets the property value applied to a selected element to be the same as that of its parent element. Effectively, this "turns on inheritance".
 initial
@@ -40,4 +40,46 @@ unset
 
     Resets the property to its natural value, which means that if the property is naturally inherited it acts like inherit, otherwise it acts like initial.
 
+## Cascade layers
+- CSS cascade layers help manage the order in which styles are applied.
+- Layers are defined using the @layer rule.
+- Layers are applied in the order they are defined.
 
+```
+@layer site, page;
+
+@layer page {
+  h1 {
+    text-decoration: overline;
+    color: red;
+  }
+}
+
+@layer site {
+  h1 {
+    text-decoration: underline;
+    color: green;
+  }
+}
+```
+
+## Layer creation and media queries
+```
+@media (min-width: 50em) {
+  @layer site;
+}
+
+@layer page {
+  h1 {
+    text-decoration: overline;
+    color: red;
+  }
+}
+
+@layer site {
+  h1 {
+    text-decoration: underline;
+    color: green;
+  }
+}
+```
