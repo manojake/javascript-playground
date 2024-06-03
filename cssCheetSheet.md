@@ -30,7 +30,8 @@ inherit
     parent element. Effectively, this "turns on inheritance".
 initial
 
-    Sets the property value applied to a selected element to the initial value of that property.
+    Sets the property value applied to a selected element to the initial value of
+    that property.
 revert
 
     Resets the property value applied to a selected element to the browser's default
