@@ -94,13 +94,22 @@ If two vertically adjacent elements both have a margin set on them and their mar
 Inline elements(div, span) behave differently. They don't appear on new lines; instead, they all sit on the same line along with any adjacent (or wrapped) text content as long as there is space for them to do so inside the width of the parent block level element. If there isn't space, then the overflowing content will move down to a new line.
 
 **Outer display type**
+This inline or block type will be be applied based on the elements that are being rendered( div or p).
 
-Thius will determine how the box is disp;layed relative to the other boxes
+If a box has an outer display type of block, then:
 
     The box will break onto a new line.
     The width and height properties are respected.
     Padding, margin and border will cause other elements to be pushed away from the box.
     If width is not specified, the box will extend in the inline direction to fill the space available in its container. In most cases, the box will become as wide as its container, filling up 100% of the space available.
+
+if a box has an outer display type of inline, then:
+
+    The box will not break onto a new line.
+    The width and height properties will not apply.
+    Top and bottom padding, margins, and borders will apply but will not cause other inline boxes to move away from the box.
+    Left and right padding, margins, and borders will apply and will cause other inline boxes to move away from the box.
+
 
 **Inner display type**
 dictates how elements inside that box are laid out.
