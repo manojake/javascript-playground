@@ -34,9 +34,9 @@ initial
     that property.
 revert
 
-    Resets the property value applied to a selected element to the browser's default
-    styling rather than the defaults applied to that property. This value acts like
-    unset in many cases.
+    Resets the property value applied to a selected element to the browser's
+    default styling rather than the defaults applied to that property.
+    This value acts like unset in many cases.
 revert-layer
 
     Resets the property value applied to a selected element to the value established
