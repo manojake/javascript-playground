@@ -43,8 +43,8 @@ revert-layer
     in a previous cascade layer.
 unset
 
-    Resets the property to its natural value, which means that if the property is naturally
-    inherited it acts like inherit, otherwise it acts like initial.
+    Resets the property to its natural value, which means that if the property
+    is naturally inherited it acts like inherit, otherwise it acts like initial.
 
 ## Cascade layers
 - CSS cascade layers help manage the order in which styles are applied.
