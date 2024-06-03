@@ -118,3 +118,6 @@ dictates how elements inside that box are laid out.
 Block and inline layout is the default way things behave on the web. By default and without any other instruction, the elements inside a box are also laid out in normal flow and behave as block or inline boxes.
 
 You can change the inner display type for example by setting display: flex;. The element will still use the outer display type block but this changes the inner display type to flex. Any direct children of this box will become flex items and behave according to the Flexbox specification.
+
+## Parts of a box
+![image](https://github.com/manojake/javascript-playground/assets/68778250/f45bef7b-82d4-4d62-ba58-d582ee077485)
