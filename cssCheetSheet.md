@@ -87,10 +87,20 @@ unset
 
 # The box model
 
+In the normal flow, By default, block-level elements (p, h) are laid out in the block flow direction.  Each element will appear on a new line below the last one, with each one separated by whatever margin that's been specified.
+
+Inline elements(div, span) behave differently. They don't appear on new lines; instead, they all sit on the same line along with any adjacent (or wrapped) text content as long as there is space for them to do so inside the width of the parent block level element. If there isn't space, then the overflowing content will move down to a new line.
+
 **Outer display type**
+
+Thius will determine how the box is disp;layed relative to the other boxes
 
     The box will break onto a new line.
     The width and height properties are respected.
     Padding, margin and border will cause other elements to be pushed away from the box.
     If width is not specified, the box will extend in the inline direction to fill the space available in its container. In most cases, the box will become as wide as its container, filling up 100% of the space available.
 
+**Inner display type**
+dictates how elements inside that box are laid out.
+
+You can change the inner display type for example by setting display: flex;. The element will still use the outer display type block but this changes the inner display type to flex. Any direct children of this box will become flex items and behave according to the Flexbox specification.
