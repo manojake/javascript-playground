@@ -89,6 +89,8 @@ unset
 
 In the normal flow, By default, block-level elements (p, h) are laid out in the block flow direction.  Each element will appear on a new line below the last one, with each one separated by whatever margin that's been specified.
 
+If two vertically adjacent elements both have a margin set on them and their margins touch, the larger of the two margins remains and the smaller one disappears. This is known as margin collapsing. Collapsing margins is only relevant in the vertical direction. 
+
 Inline elements(div, span) behave differently. They don't appear on new lines; instead, they all sit on the same line along with any adjacent (or wrapped) text content as long as there is space for them to do so inside the width of the parent block level element. If there isn't space, then the overflowing content will move down to a new line.
 
 **Outer display type**
