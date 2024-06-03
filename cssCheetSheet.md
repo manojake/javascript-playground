@@ -127,3 +127,13 @@ You can change the inner display type for example by setting display: flex;. The
 
 ## Parts of a box
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/f45bef7b-82d4-4d62-ba58-d582ee077485)
+
+In the below image the actual height/width would be height/weight + padding + border
+![image](https://github.com/manojake/javascript-playground/assets/68778250/ad445dd6-200c-473d-be76-242a11de1c49)
+
+
+# The alternative CSS box model
+Any width is the width of the visible box on the page and no need to add up the border and padding to get the real size of the box.This is a popular choice among developers
+
+To turn on the alternative model for an element, set box-sizing: border-box on it:
+![image](https://github.com/manojake/javascript-playground/assets/68778250/8853aea7-b68d-440d-9839-15964fc71494)
