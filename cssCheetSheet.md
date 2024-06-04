@@ -143,3 +143,7 @@ To turn on the alternative model for an element, set box-sizing: border-box on i
 # Using display: inline-block
 
 display: inline-block is a special value of display, which provides a middle ground between inline and block. Use it if you do not want an item to break onto a new line, but do want it to respect width and height and avoid the overlapping seen above.
+
+Where this can be useful is when you want to give a link a larger hit area by adding padding. <a> is an inline element like <span>; you can use display: inline-block to allow padding to be set on it, making it easier for a user to click the link.
+
+You see this fairly frequently in navigation bars.
