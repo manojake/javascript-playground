@@ -139,3 +139,7 @@ Any width is the width of the visible box on the page and no need to add up the 
 To turn on the alternative model for an element, set box-sizing: border-box on it:
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/8853aea7-b68d-440d-9839-15964fc71494)
+
+# Using display: inline-block
+
+display: inline-block is a special value of display, which provides a middle ground between inline and block. Use it if you do not want an item to break onto a new line, but do want it to respect width and height and avoid the overlapping seen above.
