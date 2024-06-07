@@ -2,7 +2,11 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 
 ##### Table of Contents
 
-[Functions](#functions)
+- [Functions](#functions)
+- [Specificity](#specificity)
+- [Inheritance](#inheritance)
+- [Cascade layers](#cascade-layers)
+-[Layer creation and media queries](#layer-creation-and-media-queries)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
