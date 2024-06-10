@@ -18,6 +18,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Sizing the background image](#sizing-the-background-image)
   - [Positioning the background image](#positioning-the-background-image)
   - [Gradient backgrounds](#gradient-backgrounds)
+  - [Multiple background images](#multiple-background-images)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -188,5 +189,18 @@ background-position is a shorthand for background-position-x and background-posi
 A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as https://cssgradient.io/
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/a43fb9a3-f604-4a75-b18f-0f4798187494)
+
+## Multiple background images
+multiple background-image values can be specified in a single property value, separating each one with a comma. When you do this you may end up with background images overlapping each other. 
+
+*Note: Gradients can be happily mixed with regular background images.*
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/03511431-7ee1-43de-85c5-e474aedb6a8f)
+
+Each value of the different properties will match up to the values in the same position in the other properties. The smaller numbers of values will cycle
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/71b1b296-0294-4200-8ee3-4ff0e3b7edb4)
+
+
 
 
