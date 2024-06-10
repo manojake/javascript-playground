@@ -13,6 +13,8 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Parts of a box](#parts-of-a-box)
   - [The alternative CSS box model](#the-alternative-css-box-model)
   - [Using display: inline-block](#using-display-inline-block)
+- [Backgrounds and borders](#backgrounds-and-borders)
+  - [Controlling background-repeat](#controlling-background-repeat)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -162,3 +164,10 @@ display: inline-block is a special value of display, which provides a middle gro
 Where this can be useful is when you want to give a link a larger hit area by adding padding. <a> is an inline element like <span>; you can use display: inline-block to allow padding to be set on it, making it easier for a user to click the link.
 
 You see this fairly frequently in navigation bars.
+
+# Backgrounds and borders
+If you specify a background color in addition to a background image then the image displays on top of the color.
+
+## Controlling background-repeat
+![image](https://github.com/manojake/javascript-playground/assets/68778250/4425ee84-a4e6-460e-a657-66f9ef6334e2)
+
