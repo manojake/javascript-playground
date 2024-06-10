@@ -15,6 +15,8 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Using display: inline-block](#using-display-inline-block)
 - [Backgrounds and borders](#backgrounds-and-borders)
   - [Controlling background-repeat](#controlling-background-repeat)
+  - [Sizing the background image](#sizing-the-background-image)
+  - [Positioning the background image](#positioning-the-background-image)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -170,4 +172,14 @@ If you specify a background color in addition to a background image then the ima
 
 ## Controlling background-repeat
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/4425ee84-a4e6-460e-a657-66f9ef6334e2)
+
+## Sizing the background image
+if the image is larger than the container, the image will be cropped. size can be used in this scenario
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/0c7307a1-b720-40e2-9efe-c726f9ccb599)
+
+## Positioning the background image
+background-position is a shorthand for background-position-x and background-position-y, which allow you to set the different axis position values individually.
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/ac253573-a631-4d71-a979-f248649753c8)
 
