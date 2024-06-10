@@ -17,6 +17,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Controlling background-repeat](#controlling-background-repeat)
   - [Sizing the background image](#sizing-the-background-image)
   - [Positioning the background image](#positioning-the-background-image)
+  - [Gradient backgrounds](#gradient-backgrounds)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -182,4 +183,10 @@ if the image is larger than the container, the image will be cropped. size can b
 background-position is a shorthand for background-position-x and background-position-y, which allow you to set the different axis position values individually.
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/ac253573-a631-4d71-a979-f248649753c8)
+
+## Gradient backgrounds
+A fun way to play with gradients is to use one of the many CSS Gradient Generators available on the web, such as https://cssgradient.io/
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/a43fb9a3-f604-4a75-b18f-0f4798187494)
+
 
