@@ -6,7 +6,13 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Specificity](#specificity)
 - [Inheritance](#inheritance)
 - [Cascade layers](#cascade-layers)
--[Layer creation and media queries](#layer-creation-and-media-queries)
+  - [Layer creation and media queries](#layer-creation-and-media-queries)
+- [The box mode](#the-box-mpdel)
+  - [Outer display type](#outer-display-type)
+  - [Inner display type](#inner-display-type)
+  - [Parts of a box](#parts-of-a-box)
+  - [The alternative CSS box model](#the-alternative-css-box-model)
+  - [Using display: inline-block](#using-display-inline-block)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -142,14 +148,14 @@ In the below image the actual height/width would be height/weight + padding + bo
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/ad445dd6-200c-473d-be76-242a11de1c49)
 
 
-# The alternative CSS box model
+## The alternative CSS box model
 Any width is the width of the visible box on the page and no need to add up the border and padding to get the real size of the box.This is a popular choice among developers
 
 To turn on the alternative model for an element, set box-sizing: border-box on it:
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/8853aea7-b68d-440d-9839-15964fc71494)
 
-# Using display: inline-block
+## Using display: inline-block
 
 display: inline-block is a special value of display, which provides a middle ground between inline and block. Use it if you do not want an item to break onto a new line, but do want it to respect width and height and avoid the overlapping seen above.
 
