@@ -21,6 +21,8 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Multiple background images](#multiple-background-images)
   - [Background attachment](#background-attachment)
   - [Rounded corners](#rounded-corners)
+- [Writing Modes](#writing-modes)
+  - [Writing modes and block and inline layout](#writing-modes-and-block-and-inline-layout)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -212,6 +214,18 @@ https://github.com/mdn/learning-area/tree/main/css/styling-boxes/backgrounds
 
 ## Rounded corners
 Rounding corners on a box is achieved by using the border-radius property
+
+# Writing Modes
+The three possible values for the writing-mode property are:
+  horizontal-tb: Top-to-bottom block flow direction. Sentences run horizontally.
+  vertical-rl: Right-to-left block flow direction. Sentences run vertically.
+  vertical-lr: Left-to-right block flow direction. Sentences run vertically.
+
+## Writing modes and block and inline layout
+  Block and inline is tied to the writing mode of the document, and not the physical screen.
+
+  Blocks are only displayed from the top to the bottom of the page if you are using a writing mode that displays text horizontally, such as English.
+
 
 
 
