@@ -19,6 +19,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Positioning the background image](#positioning-the-background-image)
   - [Gradient backgrounds](#gradient-backgrounds)
   - [Multiple background images](#multiple-background-images)
+  - [Background attachment](#background-attachment)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -200,6 +201,13 @@ multiple background-image values can be specified in a single property value, se
 Each value of the different properties will match up to the values in the same position in the other properties. The smaller numbers of values will cycle
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/71b1b296-0294-4200-8ee3-4ff0e3b7edb4)
+
+## Background attachment
+Another option we have available for backgrounds is specifying how they scroll when the content scrolls. This is controlled using the background-attachment property,
+
+https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html
+
+https://github.com/mdn/learning-area/tree/main/css/styling-boxes/backgrounds
 
 
 
