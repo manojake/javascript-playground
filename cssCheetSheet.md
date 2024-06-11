@@ -20,6 +20,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Gradient backgrounds](#gradient-backgrounds)
   - [Multiple background images](#multiple-background-images)
   - [Background attachment](#background-attachment)
+  - [Rounded corners](#rounded-corners)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -208,6 +209,9 @@ Another option we have available for backgrounds is specifying how they scroll w
 https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html
 
 https://github.com/mdn/learning-area/tree/main/css/styling-boxes/backgrounds
+
+## Rounded corners
+Rounding corners on a box is achieved by using the border-radius property
 
 
 
