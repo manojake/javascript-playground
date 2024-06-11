@@ -226,6 +226,10 @@ The three possible values for the writing-mode property are:
 
   Blocks are only displayed from the top to the bottom of the page if you are using a writing mode that displays text horizontally, such as English.
 
+In the below example, the Paragraph and Header are stacked based on the horizontal and vertical writing mode.
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/70a22c35-132b-4220-98b2-ed2abb80fca8)
+
 
 
 
