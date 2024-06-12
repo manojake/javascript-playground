@@ -23,7 +23,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Rounded corners](#rounded-corners)
 - [Writing Modes](#writing-modes)
   - [Writing modes and block and inline layout](#writing-modes-and-block-and-inline-layout)
-  - [Logical props that replaces height and width](#logical-props-that-replaces-height-and-width)
+  - [Logical props that replaces height and width and other physical props](#logical-props-that-replaces-height-and-width-and-other-physical-props)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -233,9 +233,15 @@ In a nutshell, __block dimension__ is always the direction blocks are displayed 
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/70a22c35-132b-4220-98b2-ed2abb80fca8)
 
-## Logical props that replaces height and width
+## Logical props that replaces height and width and other physical props
 In the below example the width and height have to to be swapped in order for the two sections to fit the content properly. To get past this difficulty, CSS has come up with new properties __inline-size__ and __block-size__
 
 The inline-size will set the size of the element based on the text flow direction. ie the writing mode. block-size will set the size based on the how the block grows, 
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/a90f39b0-71d4-4901-9346-cd1cda31ecb2)
+
+The __margin-top__ property is mapped to __margin-block-start__ — this will always refer to the margin at the start of the block dimension.
+
+The __padding-left__ property maps to __padding-inline-start__, the padding that is applied to the start of the inline direction.
+
+see the full set of mappings [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values)
