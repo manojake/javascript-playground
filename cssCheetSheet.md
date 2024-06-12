@@ -245,3 +245,6 @@ The __margin-top__ property is mapped to __margin-block-start__ — this will al
 The __padding-left__ property maps to __padding-inline-start__, the padding that is applied to the start of the inline direction.
 
 see the full set of mappings [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values)
+
+ You can float an image left to cause text to wrap round the image. You could replace left with inline-start
+__float: inline-start__
