@@ -262,3 +262,9 @@ To crop content when it overflows, you can set __overflow: hidden__.
 __Using overflow: scroll__, browsers with visible scrollbars will __always display them__ even if there is not enough content to overflow.
 
 __To just scroll on the y axis__, you could use the overflow-y property, setting __overflow-y: scroll__.
+
+Although you can set __overflow-x__ to scroll on x axis, its not recommended. consider using the _word-break_ or _overflow-wrap_ property
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/971a5c52-c5f6-4816-9f67-de1f0de93574)
+
+If you only want scrollbars to appear when there is more content than can fit in the box, use __overflow: auto__.
