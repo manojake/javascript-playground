@@ -24,8 +24,9 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Writing Modes](#writing-modes)
   - [Writing modes and block and inline layout](#writing-modes-and-block-and-inline-layout)
   - [Logical props that replaces height and width and other physical props](#logical-props-that-replaces-height-and-width-and-other-physical-props)
-- [Overflowing content](overflowing-content)
+- [Overflowing content](#overflowing-content)
   - [The overflow property](#the-overflow-property)
+- [CSS values and units](#CSS-values-and-units)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -268,3 +269,8 @@ Although you can set __overflow-x__ to scroll on x axis, its not recommended. co
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/971a5c52-c5f6-4816-9f67-de1f0de93574)
 
 If you only want scrollbars to appear when there is more content than can fit in the box, use __overflow: auto__.
+
+[CSS values and units](#css-values-and-units)
+AbsoluteUnits: _px_
+Relative units: _em_ and _rem_: relative to the font size of the parent element and the root element, respectively.
+_vh_ and _vw_: relative to the viewport's height and width, respectively
