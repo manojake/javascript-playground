@@ -24,6 +24,8 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Writing Modes](#writing-modes)
   - [Writing modes and block and inline layout](#writing-modes-and-block-and-inline-layout)
   - [Logical props that replaces height and width and other physical props](#logical-props-that-replaces-height-and-width-and-other-physical-props)
+- [Overflowing content](overflowing-content)
+  - [The overflow property](#the-overflow-property)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -248,3 +250,15 @@ see the full set of mappings [here](https://developer.mozilla.org/en-US/docs/Web
 
  You can float an image left to cause text to wrap round the image. You could replace left with inline-start
 __float: inline-start__
+
+# Overflowing content
+Overflow is what happens when there is too much content to fit in an element box.
+
+## The overflow property
+he default value of the __<overflow>__ value type is __visible__. With this default setting, one can __see content__ when it overflows.
+
+To crop content when it overflows, you can set __overflow: hidden__. 
+
+__Using overflow: scroll__, browsers with visible scrollbars will __always display them__ even if there is not enough content to overflow.
+
+__To just scroll on the y axis__, you could use the overflow-y property, setting __overflow-y: scroll__.
