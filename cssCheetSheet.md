@@ -30,6 +30,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [ems and rems](#ems-and-rems)
   - [Percentages](#percentages)
 - [Sizing items in CSS](#sizing-items-in-css)
+  - [Min and max sizes](#min-and-max-sizes)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -293,3 +294,9 @@ On the other hand, __the rem unit means "The root element's font-size" (rem stan
  Note: When you use __margin and padding set in percentages__, the value is calculated from the inline size of the containing block — therefore the __width__ when working in a horizontal language.
 
 # Sizing items in CSS
+
+## Min and max sizes
+
+If you have a box that might contain a variable amount of content, and you always want it to be at least a certain height, you could set the min-height property on it.
+
+The use of _max-width_ can be explained with an example. Sippose the container div has 200 px width. But the image with it has only 100px intrinsic (original width). If the width of the image is set to 100%, the image will be scaled up to 2oopx since % always relative to the parent container. But if _max-width_ is used instead, the image will grow only to it's intrinsic width. Not beyond that.
