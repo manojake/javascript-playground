@@ -27,6 +27,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Overflowing content](#overflowing-content)
   - [The overflow property](#the-overflow-property)
 - [CSS values and units](#css-values-and-units)
+  - [ems and rems](#ems-and-rems)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -276,3 +277,8 @@ AbsoluteUnits: _px_
 Relative units: _em_ and _rem_: relative to the font size of the parent element and the root element, respectively.
 
 _vh_ and _vw_: relative to the viewport's height and width, respectively
+
+## ems and rems
+__the em unit means "my parent element's font-size"__ in the case of typography. So each successive level of nesting gets progressively larger
+
+On the other hand, __the rem unit means "The root element's font-size" (rem stands for "root em")__
