@@ -272,5 +272,7 @@ If you only want scrollbars to appear when there is more content than can fit in
 
 # CSS values and units
 AbsoluteUnits: _px_
+
 Relative units: _em_ and _rem_: relative to the font size of the parent element and the root element, respectively.
+
 _vh_ and _vw_: relative to the viewport's height and width, respectively
