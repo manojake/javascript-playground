@@ -290,4 +290,6 @@ On the other hand, __the rem unit means "The root element's font-size" (rem stan
 
  For example, if you set an element's font-size as a percentage, it will be a percentage of the font-size of the element's parent. If you use a percentage for a width value, it will be a percentage of the width of the parent.
 
+ _Note: When you use __margin and padding set in percentages__, the value is calculated from the inline size of the containing block — therefore the __width__ when working in a horizontal language. _
+
 # Sizing items in CSS
