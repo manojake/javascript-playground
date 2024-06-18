@@ -28,6 +28,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [The overflow property](#the-overflow-property)
 - [CSS values and units](#css-values-and-units)
   - [ems and rems](#ems-and-rems)
+  - [Percentages](#percentages)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -282,3 +283,8 @@ _vh_ and _vw_: relative to the viewport's height and width, respectively
 __the em unit means "my parent element's font-size"__ in the case of typography. So each successive level of nesting gets progressively larger
 
 On the other hand, __the rem unit means "The root element's font-size" (rem stands for "root em")__
+
+## Percentages
+ The percentages is set relative to the parent elemnt's property value.
+
+ For example, if you set an element's font-size as a percentage, it will be a percentage of the font-size of the element's parent. If you use a percentage for a width value, it will be a percentage of the width of the parent.
