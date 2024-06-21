@@ -32,6 +32,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Sizing items in CSS](#sizing-items-in-css)
   - [Min and max sizes](#min-and-max-sizes)
   - [Viewport units](#viewport-units)
+- [Images, media, and form elements](#images,-media,-and-form-elements)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -306,3 +307,5 @@ The use of _max-width_ can be explained with an example. Sippose the container d
 1vh is equal to 1% of the viewport height, and 1vw is equal to 1% of the viewport width. ie the browser tab height and width.
 
 A usecase of this wouyld be, if you want a full-page hero section to show before the rest of your content, making that part of your page 100vh high will push the rest of the content below the viewport, meaning that it will only appear once the document is scrolled.
+
+# Images, media, and form elements
