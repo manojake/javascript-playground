@@ -33,6 +33,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Min and max sizes](#min-and-max-sizes)
   - [Viewport units](#viewport-units)
 - [Images, media, and form elements](#images-media-and-form-elements)
+  - [Sizing images](#sizing-images)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -309,3 +310,8 @@ The use of _max-width_ can be explained with an example. Sippose the container d
 A usecase of this wouyld be, if you want a full-page hero section to show before the rest of your content, making that part of your page 100vh high will push the rest of the content below the viewport, meaning that it will only appear once the document is scrolled.
 
 # Images, media, and form elements
+
+## Sizing images
+_max-width_ property can be used for the image, so that the image will not expand if the container box is greater that the image's intrinsic height and width. It will also do not over flow and will be fit in the container by keeping the aspect ratio if the image dimension is greater than the container.
+
+Here _width:100%_ can't be used since _%_ will be the percentage value of the element's parent container. Hence the image will take the full width of the container and if the image is smaller, it will stretch
