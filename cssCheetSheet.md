@@ -321,3 +321,5 @@ _object-fit_ can be used here as well and it is similar to _background-size_ pro
 _contain_ as a value, the image will be scaled down until it is small enough to fit inside the box. This will result in "letterboxing" if it is not the same aspect ratio as the box.
 
 You could also try the value of _fill_, which will fill the box but not maintain the aspect ratio.
+
+_note: Images and videos will not stretch to contain in the grid unlike background-colour. Image's default behaviour is different when used in layout like grid and flex. It will have to be given height and width 100% which will stretch the image.
