@@ -315,3 +315,9 @@ A usecase of this wouyld be, if you want a full-page hero section to show before
 _max-width_ property can be used for the image, so that the image will not expand if the container box is greater that the image's intrinsic height and width. It will also do not over flow and will be fit in the container by keeping the aspect ratio if the image dimension is greater than the container.
 
 Here _width:100%_ can't be used since _%_ will be the percentage value of the element's parent container. Hence the image will take the full width of the container and if the image is smaller, it will stretch
+
+_object-fit_ can be used here as well and it is similar to _background-size_ property of a back ground image. _cover_ value can be used, which sizes the image down, maintaining the aspect ratio so that it neatly fills the box. As the aspect ratio is maintained, some parts of the image will be cropped by the box.
+
+_contain_ as a value, the image will be scaled down until it is small enough to fit inside the box. This will result in "letterboxing" if it is not the same aspect ratio as the box.
+
+You could also try the value of _fill_, which will fill the box but not maintain the aspect ratio.
