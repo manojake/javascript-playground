@@ -34,6 +34,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Viewport units](#viewport-units)
 - [Images, media, and form elements](#images-media-and-form-elements)
   - [Sizing images](#sizing-images)
+- [Styling tables](#styling-tables)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -323,3 +324,7 @@ _contain_ as a value, the image will be scaled down until it is small enough to 
 You could also try the value of _fill_, which will fill the box but not maintain the aspect ratio.
 
 _note: Images and videos will not stretch to contain in the grid unlike background-colour. Image's default behaviour is different when used in layout like grid and flex. It will have to be given height and width 100% which will stretch the image.
+
+# Styling tables
+
+SHould expolre more in [MDN docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
