@@ -340,6 +340,7 @@ Apply _display: flex_ to the parent element of the elements you want to lay out;
 When _flex_ is set, below initial values are set by default
 
 _flex-direction: row_
+
 _align-items: stretch_ This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item.
 
 The items all line up at the start of the container, leaving any extra space at the end of the row.
