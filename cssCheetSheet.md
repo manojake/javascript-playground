@@ -38,6 +38,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [CSS layout](#css-layout)
   - [Flexbox](#flexbox)
     - [Horizontal and vertical alignment](#horizontal-and-vertical-alignment)
+  - [Grids](#grids)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -395,3 +396,7 @@ The shorthand for _flex-direction_ and _flex-wrap_ would be
 _align-items_ can be used to align flex items. By defaukt it's value is _normal_. ie the items will be stretched in the direction of the cross axis. ie if the _flex-direction is row_ the items will be stretched vertically to fill the parent container. But if the _center_ value is used, the items will not be stretched beyond it's intrinsic width and height.The flex items are positioned at the center of the cross-axis. The flex items are spaced evenly along the main-axis by setting the _justify-content_ property to _space-around_.
 
 You can override the align-items behavior for individual flex items by applying the _align-self_ property to them.
+
+## Grids
+
+Grid layout is a two-dimensional layout system for the web. It lets you organize content into rows and columns.
