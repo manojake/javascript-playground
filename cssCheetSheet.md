@@ -358,4 +358,5 @@ _flex-direction: row_
 
 _align-items: stretch_ This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item.
 
-
+For instance when _flex-direction_ is set to column and there are too many columns in the container, we could use the propert _flex-wrap: wrap_ to nicely wrap
+the columns to the next row when there is not enoguh space. It;s usefl to note that _flex: 200px_ will give each column 200px of width.
