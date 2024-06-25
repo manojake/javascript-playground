@@ -35,6 +35,8 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Images, media, and form elements](#images-media-and-form-elements)
   - [Sizing images](#sizing-images)
 - [Styling tables](#styling-tables)
+- [CSS layout](#css-layout)
+  - [Flexbox](#flexbox)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -328,3 +330,9 @@ _note: Images and videos will not stretch to contain in the grid unlike backgrou
 # Styling tables
 
 SHould expolre more in [MDN docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
+
+# CSS layout
+Dispaly _inline_ and _block_ has already been discussed. The two other possible values are _flexbox_ and _grid_
+
+## Flexbox
+Apply _display: flex_ to the parent element of the elements you want to lay out; all its direct children then become flex items.
