@@ -335,6 +335,8 @@ SHould expolre more in [MDN docs](https://developer.mozilla.org/en-US/docs/Learn
 Dispaly _inline_ and _block_ has already been discussed. The two other possible values are _flexbox_ and _grid_
 
 ## Flexbox
+This is a one dimentional layout, to arrange child items in a row or column,
+
 Apply _display: flex_ to the parent element of the elements you want to lay out; the child items now arrange themselves into columns even if they are block elements. The children become flex items.
 
 When _flex_ is set, below initial values are set by default
@@ -348,5 +350,5 @@ The items all line up at the start of the container, leaving any extra space at 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/15cb9560-6d11-4f41-a62d-bc5cf33566c5)
 
 
-But if you add _flex:1_ property to all the child elemnts, all of them will expand and take up all the width of th container. If you add more items, the items will adjust to make space
+But if you add _flex:1_ property to all the child elemnts, all of them will expand and take up all the width of th container. All the items will have equal width and height. If you add more items, the items will adjust to make space
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/38a7dce2-57b9-4aec-ba5c-ccdcf1f1ce89)
