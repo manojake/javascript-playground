@@ -352,3 +352,18 @@ The items all line up at the start of the container, leaving any extra space at 
 
 But if you add _flex:1_ property to all the child elemnts, all of them will expand and take up all the width of th container. All the items will have equal width and height. If you add more items, the items will adjust to make space
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/38a7dce2-57b9-4aec-ba5c-ccdcf1f1ce89)
+
+_Note: The inline-flex value will make the container render as an inline item with in the page
+
+
+
+__The main axis__ is the axis running in the direction the flex items are laid out in.The start and end of this axis are called the __main start__ and __main end__. The length from the main-start edge to the main-end edge is the __main size__.
+
+__The cross axis__ is the axis running perpendicular to the direction the flex items are laid out in. The start and end of this axis are called the __cross start__ and __cross end__. The length from the cross-start edge to the cross-end edge is the __cross size__.
+
+The parent elemnt is called __flex container__
+
+The child elements are called __flex items__
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/91b52152-684f-4abd-91ee-528798712220)
+
