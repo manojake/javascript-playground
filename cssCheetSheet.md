@@ -392,4 +392,6 @@ The shorthand for _flex-direction_ and _flex-wrap_ would be
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/e0b5927a-7ad5-4856-9cc8-fbf908bf6b29)
 
 ### Horizontal and vertical alignment
-_align-items_ can be used to align lex items. By defaukt it's value is _normal_. ie the items will be stretched in the direction of the cross axis. ie if the _flex-direction is row_ the items will be stretched vertically to fill the parent container. But if the _center_ value is used, the items will not be stretched beyond it's intrinsic width and height.The flex items are positioned at the center of the cross-axis. The flex items are spaced evenly along the main-axis by setting the _justify-content_ property to _space-around_.
+_align-items_ can be used to align flex items. By defaukt it's value is _normal_. ie the items will be stretched in the direction of the cross axis. ie if the _flex-direction is row_ the items will be stretched vertically to fill the parent container. But if the _center_ value is used, the items will not be stretched beyond it's intrinsic width and height.The flex items are positioned at the center of the cross-axis. The flex items are spaced evenly along the main-axis by setting the _justify-content_ property to _space-around_.
+
+You can override the align-items behavior for individual flex items by applying the _align-self_ property to them.
