@@ -378,12 +378,15 @@ so in effect the below values will wrap the items and items will have equal widt
     }
 
 _flex: 1_ is a unitless proportion value that dictates how much available space along the main axis each flex item will take up compared to other flex items.
+
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/fea84665-af31-45e9-b54d-a4f78ac0436a)
 
 The following rule could be added to give specific size for the 3rd item
+
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/633e79e8-6c32-492c-ac92-1a94e3890f5a)
 
 
 The shorthand for _flex-direction_ and _flex-wrap_ would be 
+
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/e0b5927a-7ad5-4856-9cc8-fbf908bf6b29)
 
