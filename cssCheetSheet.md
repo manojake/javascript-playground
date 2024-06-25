@@ -345,4 +345,8 @@ _align-items: stretch_ This means that the items stretch to the height of the fl
 
 The items all line up at the start of the container, leaving any extra space at the end of the row.
 
+![image](https://github.com/manojake/javascript-playground/assets/68778250/15cb9560-6d11-4f41-a62d-bc5cf33566c5)
 
+
+But if you add _flex:1_ property to all the child elemnts, all of them will expand and take up all the width of th container. If you add more items, the items will adjust to make space
+![image](https://github.com/manojake/javascript-playground/assets/68778250/38a7dce2-57b9-4aec-ba5c-ccdcf1f1ce89)
