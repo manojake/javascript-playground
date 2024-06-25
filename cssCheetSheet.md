@@ -358,6 +358,26 @@ _flex-direction: row_
 
 _align-items: stretch_ This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item.
 
-For instance when _flex-direction_ is set to row and there are too many items in the container, we could use the propert _flex-wrap: wrap_ to nicely wrap
+For instance when _flex-direction_ is set to row and there are too many items in the container, we could use the property _flex-wrap: wrap_ to nicely wrap
 the items to the next row when there is not enoguh space. It's useful to note that _flex: 200px_ will give each column 200px of width. But if any of the row
 has more width, that width will be equally distrubuted to the items. ie items could have more than 200px width. But all the items will have equal width in a row
+
+Itmes that are taking more width in the second row because of lack of elemnts can be fixed by giving a _max-width_ value. 
+
+so in effect the below values will wrap the items and items will have equal width
+
+    flex-container-class: {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    
+    flex-item: {
+      flex: 1 200px
+      max-width: 200px
+    }
+![image](https://github.com/manojake/javascript-playground/assets/68778250/fea84665-af31-45e9-b54d-a4f78ac0436a)
+
+The shorthand for _flex-direction_ and _flex-wrap_ would be 
+![image](https://github.com/manojake/javascript-playground/assets/68778250/e0b5927a-7ad5-4856-9cc8-fbf908bf6b29)
+
