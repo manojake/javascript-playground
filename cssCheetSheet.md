@@ -400,3 +400,7 @@ You can override the align-items behavior for individual flex items by applying 
 ## Grids
 
 Grid layout is a two-dimensional layout system for the web. It lets you organize content into rows and columns.
+
+_display: grid_ gives you a one column grid, so your items will continue to display one below the other as they do in normal flow.
+
+_grid-template-columns: 200px 200px 200px;_ will arrange the inline items into three columns,
