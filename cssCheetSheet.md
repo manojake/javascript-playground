@@ -40,6 +40,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
     - [Horizontal and vertical alignment](#horizontal-and-vertical-alignment)
   - [Grids](#grids)
     - [Flexible grids with the fr unit](#flexible-grids-with-the-fr-unit)
+    - [Gaps between tracks](#gaps-between-tracks)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -411,4 +412,10 @@ _display: grid_ gives you a one column grid, so your items will continue to disp
 _grid-template-columns: 200px 200px 200px;_ will arrange the inline items into three columns. If you use _1fr_ the space will be equally distributed to all the columns.
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/2eb1f764-b026-4ceb-b806-c5eea3b18b6b)
+
+### Gaps between tracks
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/ec4d1874-9e7c-4c1b-9c8e-2af5f14993af)
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/1b08dfa5-24bf-4725-8ac5-2fdb2227b0be)
 
