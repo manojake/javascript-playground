@@ -42,7 +42,8 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
     - [Flexible grids with the fr unit](#flexible-grids-with-the-fr-unit)
     - [Gaps between tracks](#gaps-between-tracks)
     - [Repeating track listings](#repeating-track-listings)
-    - 
+    - [The minmax() function](#the-minmax()-function)
+    - [Useful Grid pattern](#useful-grid-pattern)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -427,4 +428,10 @@ _Note: In the above code the row size is not defined. Hence rows are auto sized.
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/c5bd2078-af4d-4d6d-99a2-cc0456c3530f)
 
+### The minmax() function
 
+_grid-auto-rows: minmax(200px, auto);_ could be set to give a minimum height fro the rows and the max-height will be auto for the rows
+
+### Useful Grid pattern
+
+_grid-template-columns: repeat(auto-fit, minmax(200px,1fr));_ will try to fit as many columns in a row which has a minimum width of 200px sharing whatever space is leftover among all the columns. The maximum is 1fr which, as we already know, distributes space evenly between tracks.
