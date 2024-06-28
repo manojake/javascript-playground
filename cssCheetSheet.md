@@ -42,6 +42,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
     - [Flexible grids with the fr unit](#flexible-grids-with-the-fr-unit)
     - [Gaps between tracks](#gaps-between-tracks)
     - [Repeating track listings](#repeating-track-listings)
+    - 
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -417,6 +418,8 @@ _grid-template-columns: 200px 200px 200px;_ will arrange the inline items into t
 ### Gaps between tracks
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/ec4d1874-9e7c-4c1b-9c8e-2af5f14993af)
+
+_Note: In the above code the row size is not defined. Hence rows are auto sized. That's why this grid is called implicit grid. If you wish to give row size or a height for each cell in this case, you could give grid-auto-rows: 100px;. Then each grid cell will have a height of 100px. This setup is called explicit grid._
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/1b08dfa5-24bf-4725-8ac5-2fdb2227b0be)
 
