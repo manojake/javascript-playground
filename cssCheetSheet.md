@@ -44,6 +44,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
     - [Repeating track listings](#repeating-track-listings)
     - [The minmax() function](#the-minmax()-function)
     - [Useful Grid pattern](#useful-grid-pattern)
+    - [Line based placement](#line-based-placement)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -435,3 +436,12 @@ _grid-auto-rows: minmax(200px, auto);_ could be set to give a minimum height fro
 ### Useful Grid pattern
 
 _grid-template-columns: repeat(auto-fit, minmax(200px,1fr));_ will try to fit as many columns in a row which has a minimum width of 200px sharing whatever space is leftover among all the columns. The maximum is 1fr which, as we already know, distributes space evenly between tracks.
+
+### Line-based placement
+
+You can also specify which ines the elemnts should be placed. For nstance the below style will make the headrr span from column 1 to column 3 in grid row 1.
+
+    header {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
