@@ -46,7 +46,9 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
     - [Useful Grid pattern](#useful-grid-pattern)
     - [Line based placement](#line-based-placement)
 - [Floats](#floats)
-
+- [Positioning](#positioning)
+  - [Relative](#relative)
+  - [Absolute](absolute)
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
 ## Functions
@@ -457,3 +459,11 @@ In order to clear any following element to wrap around the floated elemnt, add _
 
 _Note: Even if you put the floated div and the following wrapping elemnt in a parent div, the elemnt follwing the parent div would still wrap around the floated div. 
 [Block formatting context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Block_formatting_context) can be used to deal with this. When **display: flow-root** from Block formatting context is applied to the wrapped div, the elemnts following the wrapped div would n't wrap aound the floated div. This exists only to create a BFC without using hacks — there will be no unintended consequences when you use it.
+
+## Relative
+
+Once the elemnt is placed in the normal flow, then the final poistion can be defined used top, lef, bottom and right props
+
+## Absolute
+
+Absolutely positioned element will be contained in the initial containing block. ie be positioned relative to the initial viewport. But if you wanna make it relative to any of the parent elemnts, give the parent elemnt _position: relative_, then the absolutely positioned elemnt will be placed relative to that parent. you can't position it relative to an element it's not nested inside of
