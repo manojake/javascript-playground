@@ -45,6 +45,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
     - [The minmax() function](#the-minmax()-function)
     - [Useful Grid pattern](#useful-grid-pattern)
     - [Line based placement](#line-based-placement)
+- [Floats](#floats)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -446,3 +447,13 @@ You can also specify which ines the elemnts should be placed. For nstance the be
       grid-row: 1;
     }
 More cleaner way to implement this is tp use [grid-template-areas](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#positioning_with_grid-template-areas)
+
+# Floats
+When _float:left_ is added to an element, it wil be taken out of the normal flow and stuck to the left of the parent element. Any content that would come below the floated element in the normal layout flow will now wrap around it instead, filling up the space to the right-hand side of it as far up as the top of the floated element. There, it will stop.
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/62fa5013-9d7c-4c4a-981e-91c3873c69f0)
+
+In order to clear any following element to wrap around the floated elemnt, add _clear: left_ property.
+
+_Note: Even if you put the floated div and the following wrapping elemnt in a parent div, the elemnt follwing the parent div would still wrap around the floated div. 
+[Block formatting context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Block_formatting_context) can be used to deal with this. When **display: flow-root** from Block formatting context is applied to the wrapped div, the elemnts following the wrapped div would n't wrap aound the floated div. This exists only to create a BFC without using hacks — there will be no unintended consequences when you use it.
