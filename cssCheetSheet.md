@@ -445,3 +445,4 @@ You can also specify which ines the elemnts should be placed. For nstance the be
       grid-column: 1 / 3;
       grid-row: 1;
     }
+More cleaner way to implement this is tp use [grid-template-areas](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#positioning_with_grid-template-areas)
