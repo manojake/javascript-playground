@@ -53,6 +53,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
   - [Styling the columns](#styling-the-columns)
   - [Spanning columns](#spanning-columns)
 - [Responsive design](#responsive-design)
+  - [The viewport meta tag](#the-viewport-meta-tag)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -492,3 +493,11 @@ To cause an element to span all the columns, specify the value of all for the co
 # Responsive design
 
 If using breakpoints, best practices encourage defining media query breakpoints with [relative units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#relative_length_units) rather than absolute sizes of an individual device.
+
+## The viewport meta tag
+
+when smartphones first arrived, most sites were not mobile optimized. The mobile browser would, therefore, set the viewport width to 980 pixels, render the page at that width, and show the result as a zoomed-out version of the desktop layout. Users could zoom in and pan around the website to view the bits they were interested in, but it looked bad.
+
+By setting _width=device-width_ you are overriding a mobile device's default, like Apple's default width=980px, with the actual width of the device. Without it, your responsive design with breakpoints and media queries may not work as intended on mobile browsers.
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/6a9bef63-b9a0-4009-b708-ff4f7ac3fcef)
