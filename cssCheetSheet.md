@@ -494,6 +494,13 @@ To cause an element to span all the columns, specify the value of all for the co
 
 If using breakpoints, best practices encourage defining media query breakpoints with [relative units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#relative_length_units) rather than absolute sizes of an individual device.
 
+When you zoom in or out in a browser, the entire page is scaled, including the base font size of the <html> element. Hence if _rem_ unit is used as a font size unit, the texts will scale with the browser zoom settings. The default html elemnt font size is 16px. 
+
+Refer: https://stackoverflow.com/questions/28988445/css-62-5-why-do-developers-use-it
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/442f2b12-e58e-411b-861a-4ce79347a797)
+
+
 ## The viewport meta tag
 
 when smartphones first arrived, most sites were not mobile optimized. The mobile browser would, therefore, set the viewport width to 980 pixels, render the page at that width, and show the result as a zoomed-out version of the desktop layout. Users could zoom in and pan around the website to view the bits they were interested in, but it looked bad.
