@@ -52,6 +52,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Multiple column layout](#Multiple-column-layout)
   - [Styling the columns](#styling-the-columns)
   - [Spanning columns](#spanning-columns)
+- [Responsive design](#responsive-design)
 
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
@@ -332,7 +333,7 @@ A usecase of this wouyld be, if you want a full-page hero section to show before
 # Images, media, and form elements
 
 ## Sizing images
-_max-width_ property can be used for the image, so that the image will not expand if the container box is greater that the image's intrinsic height and width. It will also do not over flow and will be fit in the container by keeping the aspect ratio if the image dimension is greater than the container.
+_max-width: 100%_ property can be used for the image, so that the image will not expand if the container box is greater that the image's intrinsic height and width. It will also do not over flow and will be fit in the container by keeping the aspect ratio if the image dimension is greater than the container.
 
 Here _width:100%_ can't be used since _%_ will be the percentage value of the element's parent container. Hence the image will take the full width of the container and if the image is smaller, it will stretch
 
@@ -487,3 +488,7 @@ When _column-count: 3;_ is used on the container, the child elemnts are laid out
 To cause an element to span all the columns, specify the value of all for the column-span property.
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/50acb31a-51c1-43d3-8bf5-baebaefba4ab)
+
+# Responsive design
+
+If using breakpoints, best practices encourage defining media query breakpoints with [relative units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#relative_length_units) rather than absolute sizes of an individual device.
