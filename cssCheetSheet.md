@@ -49,6 +49,10 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 - [Positioning](#positioning)
   - [Relative](#relative)
   - [Absolute](absolute)
+- [Multiple column layout](#Multiple-column-layout)
+  - [Styling the columns](#styling-the-columns)
+  - [Spanning columns](#spanning-columns)
+
 Later styles replace conflicting styles that appear earlier in the stylesheet. This is the cascade rule.
 
 ## Functions
@@ -467,3 +471,19 @@ Once the elemnt is placed in the normal flow, then the final poistion can be def
 ## Absolute
 
 Absolutely positioned element will be contained in the initial containing block. ie be positioned relative to the initial viewport. But if you wanna make it relative to any of the parent elemnts, give the parent elemnt _position: relative_, then the absolutely positioned elemnt will be placed relative to that parent. you can't position it relative to an element it's not nested inside of
+
+# Multiple column layout
+
+The multiple-column layout specification provides you with a method for laying content out in columns, as you might see in a newspaper.
+
+When _column-count: 3;_ is used on the container, the child elemnts are laid out in three columns. You could give it a flexible width by specifying a max-width. A specific width could also be defined using _ column-width: 200px;_.
+
+## Styling the columns
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/a7863329-9c2a-42b5-8b0b-8c99701ee4a0)
+
+## Spanning columns
+
+To cause an element to span all the columns, specify the value of all for the column-span property.
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/50acb31a-51c1-43d3-8bf5-baebaefba4ab)
