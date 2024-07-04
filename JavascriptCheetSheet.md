@@ -3,6 +3,7 @@
 - [Useful string methods](#useful-string-methods)
 - [Arrays](#arrays)
   - [For of](#for-of)
+- [Anonymous functions](#anonymous-functions)
 
 # Operator precedence
 
@@ -36,3 +37,9 @@ Convert to Numbers and String using Number() and String() functions.
 ## For of
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/5c1064ed-d369-4a3d-8be0-16a2192f5546)
+
+# Anonymous functions
+
+_Note: Functions in an object are called methods._
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/4c9170b3-e27a-478a-849a-cef60ac2099e)
