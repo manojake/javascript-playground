@@ -21,3 +21,5 @@ Convert to Numbers and String using Number() and String() functions.
 
     ![image](https://github.com/manojake/javascript-playground/assets/68778250/9a83ccbc-d208-4914-912c-34b9f5e6fbc0)
 
+ - "mozilla".slice(1, 4)); // "ozi"  Extracting a substring from a string
+
