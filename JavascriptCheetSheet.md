@@ -1,6 +1,8 @@
 - [Operator precedence](#operator-precedence)
 - [Numbers vs strings](#numbers-vs-strings)
 - [Useful string methods](#useful-string-methods)
+- [Arrays](#arrays)
+  - [For of](#for-of)
 
 # Operator precedence
 
@@ -23,3 +25,14 @@ Convert to Numbers and String using Number() and String() functions.
 
  - "mozilla".slice(1, 4)); // "ozi"  Extracting a substring from a string
 
+# Arrays
+
+- Array.push() returns the new length of the array
+- Array.pop() removes and returns the last item
+- Array.shift() removes and returns the last item
+- Array.splice(startingIndex, #ofItemstoBeRemoved)
+- Array.toString() returns a comma seperated string
+- Array.join() will return a string with speration char of your own
+## For of
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/5c1064ed-d369-4a3d-8be0-16a2192f5546)
