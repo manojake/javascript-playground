@@ -4,6 +4,8 @@
 - [Arrays](#arrays)
   - [For of](#for-of)
 - [Anonymous functions](#anonymous-functions)
+- [Javascript Objects](#javascript-objects)
+- [Object prototypes](#object-prototypes)
 
 # Operator precedence
 
@@ -43,3 +45,18 @@ Convert to Numbers and String using Number() and String() functions.
 _Note: Functions in an object are called methods._
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/4c9170b3-e27a-478a-849a-cef60ac2099e)
+
+# Javascript Objects
+
+Below is an example of an object which accepts name as a contructor parameter
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/4a0151ae-c069-49b5-8c45-f9f58163bf32)
+
+# Object prototypes
+
+When you try to access a property of an object: if the property can't be found in the object itself, the prototype is searched for the property. If the property still can't be found, then the prototype's prototype is searched, and so on until either the property is found, or the end of the chain is reached, in which case undefined is returned.
+
+To find out the prototype of an object, we can use the function Object.getPrototypeOf(). Object.prototype, and it is the most basic prototype, that all objects have by default. The prototype of Object.prototype is null, so it's at the end of the prototype chain.
+
+_Note: The prototype of an object is not always Object.prototype_
+
