@@ -6,6 +6,7 @@
 - [Anonymous functions](#anonymous-functions)
 - [Javascript Objects](#javascript-objects)
 - [Object prototypes](#object-prototypes)
+  - [Inheritance](#inheritance)
 
 # Operator precedence
 
@@ -59,4 +60,11 @@ When you try to access a property of an object: if the property can't be found i
 To find out the prototype of an object, we can use the function Object.getPrototypeOf(). Object.prototype, and it is the most basic prototype, that all objects have by default. The prototype of Object.prototype is null, so it's at the end of the prototype chain.
 
 _Note: The prototype of an object is not always Object.prototype_
+
+## Inheritance
+
+- How to create an new object ,if you have an existing object as a prototype.
+
+  ![image](https://github.com/manojake/javascript-playground/assets/68778250/fdf5de50-477e-4f00-8541-4ef9d87925da)
+
 
