@@ -14,6 +14,7 @@
 - [Classes and constructors](#classes-and-constructors)
 - [Inheritance](#inheritance)
 - [Encapsulation](#encapsulation)
+- [Private methods](#private-methods)
 
 # Operator precedence
 
@@ -114,4 +115,8 @@ _Note: Constructors, by convention, start with a capital letter and are named fo
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/67d091f3-9405-4c9b-8179-f9dffc2083eb)
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/ab76d978-d219-4314-8197-df628567885f)
+
+# Private methods
+![image](https://github.com/manojake/javascript-playground/assets/68778250/2c4db4a0-1689-46d8-9da0-7abda3bd8b7c)
+
 
