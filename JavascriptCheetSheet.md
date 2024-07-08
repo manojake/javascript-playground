@@ -69,4 +69,5 @@ _Note: The prototype of an object is not always Object.prototype_
 
   ![image](https://github.com/manojake/javascript-playground/assets/68778250/fdf5de50-477e-4f00-8541-4ef9d87925da)
 
+In the above example, person object is set as the prototype of manosh opbject. if name property was not set on manosh object, manosh would get the name property from it's prototype and it would have printed undefined.
 
