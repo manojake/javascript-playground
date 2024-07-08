@@ -7,6 +7,7 @@
 - [Javascript Objects](#javascript-objects)
 - [Object prototypes](#object-prototypes)
   - [Inheritance](#inheritance)
+  - [Introducing constructors](#introducing-constructors)
 
 # Operator precedence
 
@@ -71,3 +72,15 @@ _Note: The prototype of an object is not always Object.prototype_
 
 In the above example, person object is set as the prototype of manosh opbject. if name property was not set on manosh object, manosh would get the name property from it's prototype and it would have printed undefined.
 
+## Introducing constructors
+
+The above example is hard to manage. Same code has to be repeated to create new obhects and need tp remember to set the name propery for the greet function to work. This could get complex very easily. That means the object literal in the above is not always adequate. Hence we could rewrite the above example like this
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/b272c4f4-bcf6-4342-9c86-2dc4c7366bd5)
+
+This works fine but is a bit long-winded: we have to create an empty object, initialize it, and return it. A better way is to use a constructor. A constructor is just a function called using the new keyword
+and it will 
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/1e73c0a1-7a58-4e90-8917-166ec757793f)
+
+_Note: Constructors, by convention, start with a capital letter and are named for the type of object they create_
