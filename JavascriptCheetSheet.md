@@ -9,6 +9,11 @@
   - [Inheritance](#inheritance)
   - [Introducing constructors](#introducing-constructors)
   - [Setting a prototype](#setting-a-prototype)
+    - [Using Object create](#using-object-create)
+    - [Using a constructor](#using-a-constructor)
+- [Classes and constructors](#classes-and-constructors)
+- [Inheritance](#inheritance)
+- [Encapsulation](#encapsulation)
 
 # Operator precedence
 
@@ -87,3 +92,26 @@ and it will
 _Note: Constructors, by convention, start with a capital letter and are named for the type of object they create_
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/5f33a528-a5f0-4e5c-9a13-c0ffa4817ec3)
+
+### Using Object create
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/038e2950-6f50-47e1-a477-3c0cb73abfcf)
+
+### Using a constructor
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/1e3db16f-1526-4b22-93a2-8253cc006c24)
+
+# Classes and constructors
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/baaa58fb-96ea-49c3-b29e-0bfbb2fbe982)
+
+# Inheritance
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/be670a0b-6b4f-4109-bad9-83f070d90470)
+
+# Encapsulation
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/67d091f3-9405-4c9b-8179-f9dffc2083eb)
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/ab76d978-d219-4314-8197-df628567885f)
+
