@@ -8,6 +8,7 @@
 - [Object prototypes](#object-prototypes)
   - [Inheritance](#inheritance)
   - [Introducing constructors](#introducing-constructors)
+  - [Setting a prototype](#setting-a-prototype)
 
 # Operator precedence
 
