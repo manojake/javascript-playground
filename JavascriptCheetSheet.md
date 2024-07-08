@@ -84,3 +84,5 @@ and it will
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/1e73c0a1-7a58-4e90-8917-166ec757793f)
 
 _Note: Constructors, by convention, start with a capital letter and are named for the type of object they create_
+
+![image](https://github.com/manojake/javascript-playground/assets/68778250/5f33a528-a5f0-4e5c-9a13-c0ffa4817ec3)
