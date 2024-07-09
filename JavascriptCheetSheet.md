@@ -15,6 +15,7 @@
 - [Inheritance](#inheritance)
 - [Encapsulation](#encapsulation)
 - [Private methods](#private-methods)
+- [Measuring Performance of Web pages](#measuring-performance-of-web-pages)
 
 # Operator precedence
 
@@ -117,6 +118,12 @@ _Note: Constructors, by convention, start with a capital letter and are named fo
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/ab76d978-d219-4314-8197-df628567885f)
 
 # Private methods
+
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/2c4db4a0-1689-46d8-9da0-7abda3bd8b7c)
+
+# Measuring Performance of Web pages
+
+Read more [here](https://developer.mozilla.org/en-US/docs/Learn/Performance/Measuring_performance)
+
 
 
