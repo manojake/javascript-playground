@@ -16,6 +16,7 @@
 - [Encapsulation](#encapsulation)
 - [Private methods](#private-methods)
 - [Measuring Performance of Web pages](#measuring-performance-of-web-pages)
+- [Functions](#functions)
 
 # Operator precedence
 
@@ -124,6 +125,14 @@ _Note: Constructors, by convention, start with a capital letter and are named fo
 # Measuring Performance of Web pages
 
 Read more [here](https://developer.mozilla.org/en-US/docs/Learn/Performance/Measuring_performance)
+
+# Functions
+
+![image](https://github.com/user-attachments/assets/9ad8d1a5-0cd1-4dfd-88c6-7991e7749b0b)
+
+![image](https://github.com/user-attachments/assets/21131030-3457-44af-a4e3-c5b3482bd79f)
+
+
 
 
 
