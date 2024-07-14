@@ -17,6 +17,7 @@
 - [Private methods](#private-methods)
 - [Measuring Performance of Web pages](#measuring-performance-of-web-pages)
 - [Functions](#functions)
+- [Closures](#closures)
 
 # Operator precedence
 
@@ -132,7 +133,6 @@ Read more [here](https://developer.mozilla.org/en-US/docs/Learn/Performance/Meas
 
 ![image](https://github.com/user-attachments/assets/21131030-3457-44af-a4e3-c5b3482bd79f)
 
+# Closures
 
-
-
-
+![image](https://github.com/user-attachments/assets/506905b5-17c2-4f7e-9343-4f3a89cc3410)
