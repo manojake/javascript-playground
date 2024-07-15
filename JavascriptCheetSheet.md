@@ -136,7 +136,20 @@ Read more [here](https://developer.mozilla.org/en-US/docs/Learn/Performance/Meas
 
 # Closures
 
+JavaScript allows for the nesting of functions and grants the inner function full access to all the variables and functions defined inside the outer function (and all other variables and functions that the outer function has access to).
+
+However, the outer function does not have access to the variables and functions defined inside the inner function. This provides a sort of encapsulation for the variables of the inner function.
+
+if the inner function manages to survive beyond the life of the outer function, the variables and functions defined in the outer function will live longer than the duration of the outer function.
+
+![image](https://github.com/user-attachments/assets/c7020a6f-f55c-48de-91d4-ec8b07d6fa97)
+
 ![image](https://github.com/user-attachments/assets/506905b5-17c2-4f7e-9343-4f3a89cc3410)
+
+_Note: By default object literals properties are always public. If there is a need of creating private variables, constructors are the way to go and those private variables can only be changes using the inner functions since they are the only ones that has access to it. A complex example would be an object containing methods for manipulating the inner variables of the outer function can be returned._
+
+![image](https://github.com/user-attachments/assets/f1d677d1-19e6-4b93-9e6f-ff466c928f5e)
+
 
 # Name conflict in closure
 
