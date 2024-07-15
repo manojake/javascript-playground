@@ -18,6 +18,7 @@
 - [Measuring Performance of Web pages](#measuring-performance-of-web-pages)
 - [Functions](#functions)
 - [Closures](#closures)
+  - [Name conflict in closure](#name-conflict-in-closure)
 
 # Operator precedence
 
@@ -136,3 +137,7 @@ Read more [here](https://developer.mozilla.org/en-US/docs/Learn/Performance/Meas
 # Closures
 
 ![image](https://github.com/user-attachments/assets/506905b5-17c2-4f7e-9343-4f3a89cc3410)
+
+# Name conflict in closure
+
+![image](https://github.com/user-attachments/assets/7b0803bc-efbf-48c1-a35d-6beb4d12cc89)
