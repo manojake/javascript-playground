@@ -17,9 +17,9 @@
 - [Private methods](#private-methods)
 - [Measuring Performance of Web pages](#measuring-performance-of-web-pages)
 - [Functions](#functions)
-- [Closures](#closures)
+  - [Closures](#closures)
   - [Name conflict in closure](#name-conflict-in-closure)
-
+  - [Arrow functions](#arrow-functions)
 # Operator precedence
 
 Multiply and divide are always done first, then add and subtract (the calculation is always evaluated from left to right. ie for * and / will be xecuted based on the order from left to right). This could be overwritten by using paranthesis.
@@ -134,7 +134,7 @@ Read more [here](https://developer.mozilla.org/en-US/docs/Learn/Performance/Meas
 
 ![image](https://github.com/user-attachments/assets/21131030-3457-44af-a4e3-c5b3482bd79f)
 
-# Closures
+## Closures
 
 JavaScript allows for the nesting of functions and grants the inner function full access to all the variables and functions defined inside the outer function (and all other variables and functions that the outer function has access to).
 
@@ -151,6 +151,10 @@ _Note: By default object literals properties are always public. If there is a ne
 ![image](https://github.com/user-attachments/assets/f1d677d1-19e6-4b93-9e6f-ff466c928f5e)
 
 
-# Name conflict in closure
+## Name conflict in closure
 
 ![image](https://github.com/user-attachments/assets/7b0803bc-efbf-48c1-a35d-6beb4d12cc89)
+
+## Arrow functions
+
+Arrow function does not have its own this, arguments, super, or new.target.Arrow functions are always anonymous.
