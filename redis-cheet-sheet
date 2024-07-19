@@ -1,1 +1,20 @@
+1. Upload below yml to cloud shell
 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-client
+  namespace: ${NAMESPACE}
+  labels:
+    app: redis-client
+spec:
+  containers:
+  - name: redis-client
+    image: redis:latest
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
+
+2. Run kubectl create -f redis-client.yml to create redis client
+3. kubectl exec -it POD_NAME -n NAME_SPACE -- /bin/bash
+4. Connect to remote redis using host and port redis-cli -h XXX.XXX.XXX.XXX -p YYYY
+5. Run redis commands: keys "*"
