@@ -170,3 +170,7 @@ Until arrow functions, every new function defined its own this value. ie
     this will be undefines in strict mode function calls
 
     this will be the base object if the function ia method in an object literal
+
+![image](https://github.com/user-attachments/assets/14692204-8f07-44ac-aef8-1884a270ee48)
+
+![image](https://github.com/user-attachments/assets/f2ec0f3d-5c09-4ed7-b3f2-8a2becde1cf9)
