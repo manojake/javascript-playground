@@ -20,6 +20,8 @@
   - [Closures](#closures)
   - [Name conflict in closure](#name-conflict-in-closure)
   - [Arrow functions](#arrow-functions)
+    - [No speparate this](#no-speparate-this) 
+ 
 # Operator precedence
 
 Multiply and divide are always done first, then add and subtract (the calculation is always evaluated from left to right. ie for * and / will be xecuted based on the order from left to right). This could be overwritten by using paranthesis.
@@ -158,3 +160,13 @@ _Note: By default object literals properties are always public. If there is a ne
 ## Arrow functions
 
 Arrow function does not have its own this, arguments, super, or new.target.Arrow functions are always anonymous.
+
+### No speparate this
+
+Until arrow functions, every new function defined its own this value. ie
+
+    A new object in case of a constructor function. That means this refer the to the currtent object context
+
+    this will be undefines in strict mode function calls
+
+    this will be the base object if the function ia method in an object literal
