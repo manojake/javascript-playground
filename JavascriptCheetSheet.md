@@ -47,7 +47,7 @@ Convert to Numbers and String using Number() and String() functions.
 
 - Array.push() returns the new length of the array
 - Array.pop() removes and returns the last item
-- Array.shift() removes and returns the last item
+- Array.shift() removes and returns the first item
 - Array.splice(startingIndex, #ofItemstoBeRemoved)
 - Array.toString() returns a comma seperated string
 - Array.join() will return a string with speration char of your own
