@@ -13,3 +13,30 @@ verify echo -n $(<rewards-cred-stage.json) | base64 | tr -d \\n
 
 # Apply the newly generated encoded value back kubernetis
 kubectl get secret rewards-credentials --namespace telus-rewards -o json | jq '.data["rewards-credentials"]="NEW_BASE64_ENCODED_VALUE"' | kubectl apply -f -
+
+
+
+
+
+
+
+
+
+# Add the kubernetis cli config to prod/non-prod context
+
+gcloud container clusters get-credentials CLUSTER_NAME --region=REGION
+
+# See all the cli context 
+
+kubectl config get-contexts
+
+# Set context
+
+kubectl config set-context NAMESPACE
+
+# see the deployemnts under a namespace
+
+kubectl get deployment --namespace=NAMESPACE
+
+
+
