@@ -16,5 +16,5 @@ spec:
 
 2. Run kubectl create -f redis-client.yml to create redis client
 3. kubectl exec -it POD_NAME -n NAME_SPACE -- /bin/bash
-4. Connect to remote redis using host and port redis-cli -h XXX.XXX.XXX.XXX -p YYYY
+4. Connect to remote redis using host and port redis-cli -h XXX.XXX.XXX.XXX -p YYYY or redis-cli -u redis:// URI
 5. Run redis commands: keys "*"
