@@ -23,4 +23,6 @@ spec:
 
 kubectl exec -it POD_NAME -n NAME_SPACE -- redis-cli -u REDIS_URL --raw GET KEY > aimia.txt
 
+Download aimia.txt and run redisDataParse.js to parse and save the data as object literal
+
 
