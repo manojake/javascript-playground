@@ -18,3 +18,9 @@ spec:
 3. kubectl exec -it POD_NAME -n NAME_SPACE -- /bin/bash
 4. Connect to remote redis using host and port redis-cli -h XXX.XXX.XXX.XXX -p YYYY or redis-cli -u redis:// URI
 5. Run redis commands: keys "*"
+
+
+
+kubectl exec -it POD_NAME -n NAME_SPACE -- redis-cli -u REDIS_URL --raw GET KEY > aimia.txt
+
+
