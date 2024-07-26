@@ -20,7 +20,8 @@
   - [Closures](#closures)
   - [Name conflict in closure](#name-conflict-in-closure)
   - [Arrow functions](#arrow-functions)
-    - [No speparate this](#no-speparate-this) 
+    - [No speparate this](#no-speparate-this)
+- [Logical operators](#logical-operators)
  
 # Operator precedence
 
@@ -179,3 +180,6 @@ Remeber a function always initialize it's own this
 
 <img width="666" alt="image" src="https://github.com/user-attachments/assets/364f74e3-d94e-4cbc-bf8d-eca6b489847e">
 
+# Logical operators
+
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/2a2804ff-a663-4b44-8d6b-8e15f087a0af">
