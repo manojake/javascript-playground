@@ -22,6 +22,7 @@
   - [Arrow functions](#arrow-functions)
     - [No speparate this](#no-speparate-this)
 - [Logical operators](#logical-operators)
+- [Optional chaining](#optional-chaining)
  
 # Operator precedence
 
@@ -183,3 +184,8 @@ Remeber a function always initialize it's own this
 # Logical operators
 
 <img width="801" alt="image" src="https://github.com/user-attachments/assets/2a2804ff-a663-4b44-8d6b-8e15f087a0af">
+
+# Optional chaining
+
+<img width="609" alt="image" src="https://github.com/user-attachments/assets/5f849c7b-fc40-479a-92fa-d2f408d0876c">
+
