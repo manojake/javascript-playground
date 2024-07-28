@@ -49,6 +49,8 @@ Convert to Numbers and String using Number() and String() functions.
 
 Property can also be assigned to arrays. For instance arrayObj.myprop = 'myProp' is a valid piece of code.
 
+An array can be cleared by setting it's length to 0
+
 - Array.push() returns the new length of the array
 - Array.pop() removes and returns the last item
 - Array.shift() removes and returns the first item
