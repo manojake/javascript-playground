@@ -23,7 +23,8 @@
     - [No speparate this](#no-speparate-this)
 - [Logical operators](#logical-operators)
 - [Optional chaining](#optional-chaining)
- 
+- [Map object](#map-object)
+   
 # Operator precedence
 
 Multiply and divide are always done first, then add and subtract (the calculation is always evaluated from left to right. ie for * and / will be xecuted based on the order from left to right). This could be overwritten by using paranthesis.
@@ -193,3 +194,14 @@ Remeber a function always initialize it's own this
 
 <img width="609" alt="image" src="https://github.com/user-attachments/assets/5f849c7b-fc40-479a-92fa-d2f408d0876c">
 
+# Map object
+
+![image](https://github.com/user-attachments/assets/ec54d784-665a-4751-bce3-eab30871e235)
+
+- How to decide whether to use a Map or an Object
+  - Use Map when you need keys that are not just strings or symbols. Maps can use any value (including objects and functions) as keys.
+  - Use Map when you need to preserve the insertion order of key-value pairs.
+  - Map is optimized for frequent additions and removals of key-value pairs
+  - Use obejct when the keys are plain strings
+  - Use object when it's going to be serialized for transmission
+  - 
