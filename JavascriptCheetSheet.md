@@ -217,3 +217,6 @@ Convert Set to an array by Array.from(new Set([1,2]))
 ![image](https://github.com/user-attachments/assets/f6b8dddb-c90e-4102-b359-268e50474a24)
 
 
+- Array and Set compared
+  - Deleting an element from array using splice is slow compared tp set.delete
+  - By using set , you dont have to keep tracj of duplicate values
