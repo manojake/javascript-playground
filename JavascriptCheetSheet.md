@@ -25,6 +25,7 @@
 - [Optional chaining](#optional-chaining)
 - [Map object](#map-object)
 - [Set object](#set-object)
+- [Getters and Setters](#getters-and-setters)
   
 # Operator precedence
 
@@ -228,7 +229,13 @@ Convert Set to an array by Array.from(new Set([1,2]))
 
 ![image](https://github.com/user-attachments/assets/f6b8dddb-c90e-4102-b359-268e50474a24)
 
+# Getters and Setters
 
+Person object is using set and get. But the same can be achieved using object methods as well. Please note that object methods does not create their own _this_. 
+
+![image](https://github.com/user-attachments/assets/87dfea86-0bc6-44cb-bd9c-acba0c46bb5d)
+
+The same can be acheievd in function constructors using either plain public functions or set the obejct literal as a prototype for the function and define getters and setters on the prototype.
 - Array and Set compared
   - Deleting an element from array using splice is slow compared tp set.delete
   - By using set , you dont have to keep tracj of duplicate values
