@@ -24,7 +24,8 @@
 - [Logical operators](#logical-operators)
 - [Optional chaining](#optional-chaining)
 - [Map object](#map-object)
-   
+- [Set object](#set-object)
+  
 # Operator precedence
 
 Multiply and divide are always done first, then add and subtract (the calculation is always evaluated from left to right. ie for * and / will be xecuted based on the order from left to right). This could be overwritten by using paranthesis.
@@ -204,4 +205,15 @@ Remeber a function always initialize it's own this
   - Map is optimized for frequent additions and removals of key-value pairs
   - Use obejct when the keys are plain strings
   - Use object when it's going to be serialized for transmission
-  - 
+
+# Set object
+
+![image](https://github.com/user-attachments/assets/d723af5c-6411-4876-8b31-c062c5f1446f)
+
+You can convert an array to set by new Set([1,2]). Set constructor accepts an array as a parameter.
+
+Convert Set to an array by Array.from(new Set([1,2]))
+
+![image](https://github.com/user-attachments/assets/f6b8dddb-c90e-4102-b359-268e50474a24)
+
+
