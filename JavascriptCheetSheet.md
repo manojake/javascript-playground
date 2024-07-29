@@ -75,6 +75,9 @@ Below is an example of an object which accepts name as a contructor parameter
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/4a0151ae-c069-49b5-8c45-f9f58163bf32)
 
+If you define a private variable like `let fullName = 'Manosh'`, it cannot be accessed or modified from outside the function. If you set the property fullName after
+creating the object, it would be same as initilizing this.fullName inside the function. this.fullName and let fullName can co exist in a function and are totaly different.
+
 # Object prototypes
 
 When you try to access a property of an object: if the property can't be found in the object itself, the prototype is searched for the property. If the property still can't be found, then the prototype's prototype is searched, and so on until either the property is found, or the end of the chain is reached, in which case undefined is returned.
