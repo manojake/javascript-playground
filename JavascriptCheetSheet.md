@@ -118,6 +118,8 @@ _Note: Constructors, by convention, start with a capital letter and are named fo
 
 # Classes and constructors
 
+Here the #name does not have to be there. But it is a good practice to set it all there so the you can keep track of those variables.
+
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/baaa58fb-96ea-49c3-b29e-0bfbb2fbe982)
 
 # Inheritance
