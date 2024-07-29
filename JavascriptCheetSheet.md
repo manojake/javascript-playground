@@ -90,6 +90,11 @@ To find out the prototype of an object, we can use the function Object.getProtot
 
 _Note: The prototype of an object is not always Object.prototype_
 
+If the protoype of an object is set at any popint of time, all the object that are created prior to setting the protype will aslo have access to the newly created prototype property
+
+![image](https://github.com/user-attachments/assets/cfef4089-032f-45f2-8b3e-5d625f92b2f6)
+
+
 ## Inheritance
 
 - How to create an new object ,if you have an existing object as a prototype.
