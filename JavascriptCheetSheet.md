@@ -80,6 +80,8 @@ creating the object, it would be same as initilizing this.fullName inside the fu
 
 # Object prototypes
 
+_Note: Plain object literals do not have prototype. Prototype is available for constructor functions only. But if you have a Car object literal. You can create a new Honda object with the prototype set as Car by using const honda = Object.create(Car). Then honda will have prototype of Car. But Car itself does not have prototype._
+
 When you try to access a property of an object: if the property can't be found in the object itself, the prototype is searched for the property. If the property still can't be found, then the prototype's prototype is searched, and so on until either the property is found, or the end of the chain is reached, in which case undefined is returned.
 
 _Note: If the property being searched for is an object, any changes to its properties will affect the parent and all children. This is because the object is stored as a reference in memory. The searched-for property only holds a reference to that object, and all object copies refer to the same instance._
