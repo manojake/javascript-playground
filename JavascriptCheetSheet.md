@@ -143,6 +143,9 @@ _Note: Private fields and methods are new features in classes with no trivial eq
 _Note: Class declaration are not hoisted which means you cannot use a class before it is declared.
 This behavior is similar to variables declared with let and const_
 
+_Note: The this value will be automatically returned as the result of new. You are advised to not return any value from the constructor — because if you return a non-primitive value,
+it will become the value of the new expression, and the value of this is dropped._
+
 Here the #name does not have to be there. But it is a good practice to set it all there so the you can keep track of those variables.
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/baaa58fb-96ea-49c3-b29e-0bfbb2fbe982)
