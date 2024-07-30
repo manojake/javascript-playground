@@ -129,6 +129,20 @@ _Note: Constructors, by convention, start with a capital letter and are named fo
 
 # Classes and constructors
 
+- This how you declare a class
+
+  ![image](https://github.com/user-attachments/assets/4485c3cf-f72e-461f-8196-68ffa5a7fa65)
+
+If you came from a pre-ES6 world, you may be more familiar with using functions as constructors.
+The pattern above would roughly translate to the following with function constructors:
+
+![image](https://github.com/user-attachments/assets/12d39af0-6a7d-4ee8-bf1f-bdba7cad6980)
+
+_Note: Private fields and methods are new features in classes with no trivial equivalent in function constructors._
+
+_Note: Class declaration are not hoisted which means you cannot use a class before it is declared.
+This behavior is similar to variables declared with let and const_
+
 Here the #name does not have to be there. But it is a good practice to set it all there so the you can keep track of those variables.
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/baaa58fb-96ea-49c3-b29e-0bfbb2fbe982)
