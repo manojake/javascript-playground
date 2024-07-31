@@ -150,6 +150,12 @@ Here the #name does not have to be there. But it is a good practice to set it al
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/baaa58fb-96ea-49c3-b29e-0bfbb2fbe982)
 
+- Methods in the classes are stored at the prototype level. For intance, in the below example the function references are same. That means new functions are not created
+  for all the instances of Red. Instead every instance get to use the same function avaiulable in the prototype. But the key point here is that _this_ will always be different for each
+  object created.
+
+  ![image](https://github.com/user-attachments/assets/b327fccd-8f7e-475a-a710-ad024723dae7)
+
 # Inheritance
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/be670a0b-6b4f-4109-bad9-83f070d90470)
