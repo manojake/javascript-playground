@@ -158,6 +158,10 @@ Here the #name does not have to be there. But it is a good practice to set it al
 
 # Inheritance
 
+- In the below example _this_ is only available after super is called. Accessing _this_ before that will result in a syntax error.
+- Professor can also override any methods from Person class. You just have to re-define the method. But if you wanna still access
+  the parent method which is being overriden, access it by super.overridenMethod()
+  
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/be670a0b-6b4f-4109-bad9-83f070d90470)
 
 # Encapsulation
