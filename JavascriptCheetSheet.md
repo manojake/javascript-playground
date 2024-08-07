@@ -26,8 +26,9 @@
 - [Map object](#map-object)
 - [Set object](#set-object)
 - [Getters and Setters](#getters-and-setters)
-- Promises
+- [Promises](#promises)
   - [Chaining after a catch](#chaining-after-a-catch)
+- [Execution contexts](#execution-contexts)
   
 # Operator precedence
 
@@ -274,3 +275,6 @@ The same can be acheievd in function constructors using either plain public func
 ## Chaining after a catch
 
 ![image](https://github.com/user-attachments/assets/96564e25-cc72-4386-b6d3-25c6e49da90b)
+
+# Execution contexts
+
