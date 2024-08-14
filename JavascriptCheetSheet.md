@@ -293,8 +293,17 @@ To run JavaScript code, the runtime engine maintains a set of agents in which to
 
 # Task vs Micro tasks
 
-![image](https://github.com/user-attachments/assets/27421759-0c9e-43db-a9f7-08efd9ab82f1)
+Promise callbacks are handled as a microtask whereas setTimeout() callbacks are handled as task queues.
+
+![image](https://github.com/user-attachments/assets/c83311c9-a627-4135-a17b-986a313aaec5)
 
 Let's analyze the above code in detail.
 
-1. 
+1. The program is initiated. Hence that's a task added to the queue. In the first event loop iteration this task is executed. Thus `Program initiated` is logged.
+2. When the Promise constructor is called, the executor function (the function passed as an argument) runs immediately, synchronously. Hence `Promise callback` is logged next.
+3. The .then will add a microtask to the queue and will only executed after the task is completed. Hence `Promise (pending)` is logged next since that will be the end of the task. 
+
+Note: The .then method adds a microtask to the queue, which will be executed after the current synchronous task completes. When "Promise (pending)" is logged, the promise is technically already resolved, but the .then handler hasn’t executed yet because microtasks run after the synchronous code. This is why the promise still shows as pending.
+
+4. Now the task is completed and agent starts executing microtask queue which will log `Promise callback (.then)`. Now there are no more microtasks, the first iteration of the event loop is completed.
+5. In the next iteration setimeout task is executed . Hence `event-loop cycle: Promise (fulfilled)` is logged
