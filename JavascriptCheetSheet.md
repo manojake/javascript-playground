@@ -30,6 +30,8 @@
   - [Chaining after a catch](#chaining-after-a-catch)
 - [Execution contexts](#execution-contexts)
 - [Runtime Agents](#runtime-agents)
+- [Event loops](#event-loops)
+- [Task vs Micro tasks](#task-vs-micro-tasks)
   
 # Operator precedence
 
@@ -284,3 +286,15 @@ The same can be acheievd in function constructors using either plain public func
 # Runtime Agents
 
 To run JavaScript code, the runtime engine maintains a set of agents in which to execute JavaScript code. Each agent is made up of a **set of execution contexts, the execution context stack, a main thread, a set for any additional threads that may be created to handle workers, a task queue, and a microtask queue**.
+
+# Event loops
+
+![image](https://github.com/user-attachments/assets/b49e38b9-1f3f-44c8-be94-2316b8812a32)
+
+# Task vs Micro tasks
+
+![image](https://github.com/user-attachments/assets/27421759-0c9e-43db-a9f7-08efd9ab82f1)
+
+Let's analyze the above code in detail.
+
+1. 
