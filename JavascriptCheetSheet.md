@@ -333,3 +333,6 @@ Secondly a code that calls this function
    
 7. The "load" event listener’s callback (console.log("Loaded data")) is executed synchronously when the event is dispatched. Since this happens within the same microtask phase, "Loaded data" is logged last, after all other synchronous code and microtasks are complete.
 
+The first output screenshot is the expected behaviour but the above code works differently in the if/else clause. We could make it consistent by modifying the code 
+
+![image](https://github.com/user-attachments/assets/6f58098e-77c3-4eb5-a261-2d3c6c55e8b8)
