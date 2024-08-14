@@ -318,6 +318,8 @@ Secondly a code that calls this function
 
 ![image](https://github.com/user-attachments/assets/4fa07b82-f2d6-4827-a4c2-eb14e33815cc)
 
+![image](https://github.com/user-attachments/assets/f8ff1f2c-3f30-4dd2-8f26-9cb529ee271c)
+
 
 1. The event listener for the "load" event is added synchronously, which means it will trigger whenever the "load" event is dispatched.
 2.  "Fetching data…" is logged immediately because it is part of the current synchronous execution within the first event loop iteration.
