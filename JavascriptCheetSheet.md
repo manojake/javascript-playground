@@ -32,6 +32,7 @@
 - [Runtime Agents](#runtime-agents)
 - [Event loops](#event-loops)
 - [Task vs Micro tasks](#task-vs-micro-tasks)
+- [Batching operations using queueMicrotask](batching-operations-using-queueMicrotask)
   
 # Operator precedence
 
@@ -336,3 +337,23 @@ Secondly a code that calls this function
 The first output screenshot is the expected behaviour but the above code works differently in the if/else clause. We could make it consistent by modifying the code 
 
 ![image](https://github.com/user-attachments/assets/6f58098e-77c3-4eb5-a261-2d3c6c55e8b8)
+
+# Batching operations using queueMicrotask
+
+Consider the below code block
+
+![image](https://github.com/user-attachments/assets/2eb0b867-0d71-42c8-a042-694082e37875)
+
+When sendMessage() gets called, the specified message is first pushed onto the message queue array. Then things get interesting.
+
+1. When the first message is added to messageQueue, a microtask is queued using queueMicrotask(). The main thread continues to run any remaining synchronous code. This microtask will run once the current execution context completes.
+2. Any further calls to sendMessage will add more messages to messageQueue, but no additional microtasks are queued. This is because the microtask is only scheduled when the queue is empty, ensuring that only one microtask processes the entire batch of messages.
+
+  The queued microtask maintains a reference to the messageQueue, so any messages added after the first one will be included in the batch processed by the microtask.
+  
+3. When the main thread reaches the end of the current synchronous code and begins processing microtasks, the queued microtask is executed. At this point, all messages that were accumulated in messageQueue are stringified into JSON format.
+
+The array messageQueue is cleared (messageQueue.length = 0) to reset it for the next batch, and the fetch function is called with the batched messages.
+
+4. This process demonstrates how batching is achieved. By only queuing a single microtask for the first message and accumulating subsequent messages in the array, the code ensures that all messages sent within the same event loop iteration are processed together in a single batch.
+ 
