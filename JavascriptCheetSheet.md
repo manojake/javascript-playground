@@ -323,11 +323,11 @@ Secondly a code that calls this function
 
 1. The event listener for the "load" event is added synchronously, which means it will trigger whenever the "load" event is dispatched.
 2.  "Fetching data…" is logged immediately because it is part of the current synchronous execution within the first event loop iteration.
-3. When getData is called and the data is not cached, the fetch operation begins asynchronously. The .then handlers are not added to the microtask queue immediately; instead, they will be added only after the fetch operation completes successfully.
+3. When getData is called and the data is not cached, the fetch operation begins asynchronously. The .then callback is not added to the microtask queue immediately; instead, they will be added only after the fetch operation completes successfully.
 4.After initiating the fetch, the synchronous code continues, and "Data fetched" is logged. This occurs before the fetch completes and before any microtasks (like the .then handlers) are processed.
 5. When the fetch completes, the first .then block is added to the microtask queue. This .then block processes the fetch result (e.g., converting it to an arrayBuffer).
 
-  After the first .then completes, the second .then block is added to the same microtask queue, which will cache the data and dispatch the "load" event.
+  After the first .then completes, the second .then callback is added to the same microtask queue, which will cache the data and dispatch the "load" event.
 
 6. The microtasks are executed in sequence. The first .then is processed, followed by the second .then which dispatches the "load" event. Because the microtask queue is emptied before returning to the task queue, everything in the microtask queue, including event dispatch, happens immediately in the same microtask cycle.
    
