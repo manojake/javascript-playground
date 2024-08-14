@@ -307,3 +307,27 @@ Note: The .then method adds a microtask to the queue, which will be executed aft
 
 4. Now the task is completed and agent starts executing microtask queue which will log `Promise callback (.then)`. Now there are no more microtasks, the first iteration of the event loop is completed.
 5. In the next iteration setimeout task is executed . Hence `event-loop cycle: Promise (fulfilled)` is logged
+
+
+
+Lets take another example. First there is a getData proto function
+
+![image](https://github.com/user-attachments/assets/89183b02-6a95-4318-b0bd-3fbc918456c0)
+
+Secondly a code that calls this function
+
+![image](https://github.com/user-attachments/assets/4fa07b82-f2d6-4827-a4c2-eb14e33815cc)
+
+
+1. The event listener for the "load" event is added synchronously, which means it will trigger whenever the "load" event is dispatched.
+2.  "Fetching data…" is logged immediately because it is part of the current synchronous execution within the first event loop iteration.
+3. When getData is called and the data is not cached, the fetch operation begins asynchronously. The .then handlers are not added to the microtask queue immediately; instead, they will be added only after the fetch operation completes successfully.
+4.After initiating the fetch, the synchronous code continues, and "Data fetched" is logged. This occurs before the fetch completes and before any microtasks (like the .then handlers) are processed.
+5. When the fetch completes, the first .then block is added to the microtask queue. This .then block processes the fetch result (e.g., converting it to an arrayBuffer).
+
+  After the first .then completes, the second .then block is added to the same microtask queue, which will cache the data and dispatch the "load" event.
+
+6. The microtasks are executed in sequence. The first .then is processed, followed by the second .then which dispatches the "load" event. Because the microtask queue is emptied before returning to the task queue, everything in the microtask queue, including event dispatch, happens immediately in the same microtask cycle.
+   
+7. The "load" event listener’s callback (console.log("Loaded data")) is executed synchronously when the event is dispatched. Since this happens within the same microtask phase, "Loaded data" is logged last, after all other synchronous code and microtasks are complete.
+
