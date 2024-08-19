@@ -32,7 +32,7 @@
 - [Runtime Agents](#runtime-agents)
 - [Event loops](#event-loops)
 - [Task vs Micro tasks](#task-vs-micro-tasks)
-- [Batching operations using queueMicrotask](batching-operations-using-queueMicrotask)
+- [Batching operations using queueMicrotask](#batching-operations-using-queueMicrotask)
   
 # Operator precedence
 
