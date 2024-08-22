@@ -14,6 +14,7 @@
     - [Using Object create](#using-object-create)
     - [Using a constructor](#using-a-constructor)
   - [Method overriding](#method-overriding)
+  - [Building longer inheritance chains](#building-longer-inheritance-chains)
 - [Classes and constructors](#classes-and-constructors)
 - [Inheritance](#inheritance)
 - [Encapsulation](#encapsulation)
@@ -167,6 +168,10 @@ The prototype of object and function are different.The prototype of an object (O
 Note: While Function.prototype is specifically for functions, it ultimately inherits from Object.prototype at the root level.
 
 ![image](https://github.com/user-attachments/assets/3ea6fb18-0140-4f08-a638-7ea4676c7e0a)
+
+## Building longer inheritance chains
+
+Use _Object.setPrototypeOf()_ to build longer inheritance chain.
 
 # Classes and constructors
 
