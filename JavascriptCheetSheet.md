@@ -19,6 +19,7 @@
 - [Functions](#functions)
   - [Closures](#closures)
   - [Name conflict in closure](#name-conflict-in-closure)
+  - [private methods with closures](#private-methods-with-closures)
   - [Arrow functions](#arrow-functions)
     - [No speparate this](#no-speparate-this)
 - [Logical operators](#logical-operators)
@@ -218,6 +219,11 @@ _Note: By default object literals properties are always public. If there is a ne
 ## Name conflict in closure
 
 ![image](https://github.com/user-attachments/assets/7b0803bc-efbf-48c1-a35d-6beb4d12cc89)
+
+## private methods with closures
+
+![image](https://github.com/user-attachments/assets/7965fca9-5442-41a7-96ea-a32b666dee89)
+
 
 ## Arrow functions
 
