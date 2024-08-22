@@ -7,6 +7,7 @@
 - [Anonymous functions](#anonymous-functions)
 - [Javascript Objects](#javascript-objects)
 - [Object prototypes](#object-prototypes)
+  - [Inheriting properties](#inheriting-properties)
   - [Inheritance](#inheritance)
   - [Introducing constructors](#introducing-constructors)
   - [Setting a prototype](#setting-a-prototype)
@@ -118,6 +119,9 @@ If the protoype of an object is set at any popint of time, all the object that a
 
 ![image](https://github.com/user-attachments/assets/cfef4089-032f-45f2-8b3e-5d625f92b2f6)
 
+## Inheriting properties
+
+![image](https://github.com/user-attachments/assets/3e325c96-7223-4ade-8d11-268cf5acac50)
 
 ## Inheritance
 
