@@ -33,6 +33,9 @@
 - [Event loops](#event-loops)
 - [Task vs Micro tasks](#task-vs-micro-tasks)
 - [Batching operations using queueMicrotask](#batching-operations-using-queueMicrotask)
+- [JavaScript typed arrays](#javaScript-typed-arrays)
+- [Iterators](#iterators)
+- [Generators](#generators)
   
 # Operator precedence
 
@@ -357,3 +360,14 @@ The array messageQueue is cleared (messageQueue.length = 0) to reset it for the 
 
 4. This process demonstrates how batching is achieved. By only queuing a single microtask for the first message and accumulating subsequent messages in the array, the code ensures that all messages sent within the same event loop iteration are processed together in a single batch.
  
+# JavaScript typed arrays
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Typed_arrays
+
+# Iterators
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators#iterators
+
+# Generators
+
+A generator in JavaScript is a special type of function that can pause its execution and later resume from where it left off. Instead of returning a single value, generators use the yield keyword to produce multiple values one at a time. They return an iterator object, which can be used to control the generator's execution.
+
+![image](https://github.com/user-attachments/assets/8711476d-018e-44ff-89de-d087c5e4965a)
