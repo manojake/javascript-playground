@@ -37,6 +37,7 @@
 - [Iterators](#iterators)
 - [Generators](#generators)
 - [Meta programming](#meta-programming)
+- [Data structures](#data-structures)
 
 # Operator precedence
 
@@ -375,3 +376,9 @@ A generator in JavaScript is a special type of function that can pause its execu
 
 # Meta programming
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Meta_programming
+
+# Data structures
+
+In JavaScript, data structures refer to various ways of organizing and storing data so that it can be efficiently accessed and modified.
+
+Eg: Array, Object, Set, Map
