@@ -171,6 +171,19 @@ Note: While Function.prototype is specifically for functions, it ultimately inhe
 
 ## Building longer inheritance chains
 
+In the given example, each `Box` object’s internal `[[Prototype]]`, which can be accessed using `Object.getPrototypeOf`, refers to `Box.prototype`, the prototype of the `Box` constructor function. Therefore, `Object.getPrototypeOf(new Box())` will be `Box.prototype`. This prototype object is usually a plain object and typically has a `constructor` property that references the `Box` function itself.
+
+Box.prototype is literally an object and you can ssign functions to it if you want
+
+    Box.prototype.hello = function() {
+    
+    }
+
+![image](https://github.com/user-attachments/assets/d24d5038-e7f2-4769-96bb-7b586150dab3)
+
+![image](https://github.com/user-attachments/assets/093db5ab-7567-4a09-99a7-30cb6433401a)
+
+
 Use _Object.setPrototypeOf()_ to build longer inheritance chain.
 
 # Classes and constructors
