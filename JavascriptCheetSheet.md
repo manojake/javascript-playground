@@ -20,6 +20,8 @@
   - [Closures](#closures)
   - [Name conflict in closure](#name-conflict-in-closure)
   - [private methods with closures](#private-methods-with-closures)
+  - [Closure scope chain](#closure-scope-chain)
+  - [Closure performance impact](#closure-performance-impact)
   - [Arrow functions](#arrow-functions)
     - [No speparate this](#no-speparate-this)
 - [Logical operators](#logical-operators)
@@ -223,6 +225,22 @@ _Note: By default object literals properties are always public. If there is a ne
 ## private methods with closures
 
 ![image](https://github.com/user-attachments/assets/7965fca9-5442-41a7-96ea-a32b666dee89)
+
+## Closure scope chain
+
+closures have access to all outer scopes.
+
+![image](https://github.com/user-attachments/assets/09f0a410-d40e-49b5-af20-06846df8cc27)
+
+## Closure performance impact
+
+In the below example, unnecessary new objects of getName and getMessage will be created everytime a new object of myObject is created.
+
+![image](https://github.com/user-attachments/assets/6ac22575-9946-42b2-9dbb-09a25d3407e4)
+
+This could be simply fixed as shown below. here the methods areappended to the existing prototype:
+
+![image](https://github.com/user-attachments/assets/5b8c177b-d0bb-4965-a62e-bc71229f81fe)
 
 
 ## Arrow functions
