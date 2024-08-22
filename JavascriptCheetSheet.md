@@ -11,6 +11,7 @@
   - [Setting a prototype](#setting-a-prototype)
     - [Using Object create](#using-object-create)
     - [Using a constructor](#using-a-constructor)
+  - [Method overriding](#method-overriding)
 - [Classes and constructors](#classes-and-constructors)
 - [Inheritance](#inheritance)
 - [Encapsulation](#encapsulation)
@@ -141,6 +142,14 @@ _Note: Constructors, by convention, start with a capital letter and are named fo
 ### Using a constructor
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/1e3db16f-1526-4b22-93a2-8253cc006c24)
+
+## Method overriding
+
+The prototype of object and function are different.The prototype of an object (Object.prototype) provides methods for all objects, like toString() and hasOwnProperty(), while the prototype of a function (Function.prototype) provides methods specifically for functions, like call() and apply().
+
+Note: While Function.prototype is specifically for functions, it ultimately inherits from Object.prototype at the root level.
+
+![image](https://github.com/user-attachments/assets/3ea6fb18-0140-4f08-a638-7ea4676c7e0a)
 
 # Classes and constructors
 
