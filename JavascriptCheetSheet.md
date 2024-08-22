@@ -36,7 +36,8 @@
 - [JavaScript typed arrays](#javaScript-typed-arrays)
 - [Iterators](#iterators)
 - [Generators](#generators)
-  
+- [Meta programming](#meta-programming)
+
 # Operator precedence
 
 Multiply and divide are always done first, then add and subtract (the calculation is always evaluated from left to right. ie for * and / will be xecuted based on the order from left to right). This could be overwritten by using paranthesis.
@@ -371,3 +372,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_gene
 A generator in JavaScript is a special type of function that can pause its execution and later resume from where it left off. Instead of returning a single value, generators use the yield keyword to produce multiple values one at a time. They return an iterator object, which can be used to control the generator's execution.
 
 ![image](https://github.com/user-attachments/assets/8711476d-018e-44ff-89de-d087c5e4965a)
+
+# Meta programming
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Meta_programming
