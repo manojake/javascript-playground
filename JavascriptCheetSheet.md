@@ -150,6 +150,12 @@ _Note: Constructors, by convention, start with a capital letter and are named fo
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/1e3db16f-1526-4b22-93a2-8253cc006c24)
 
+Note: The constructor data property of an Object instance returns a reference to the constructor function that created the instance object. Note that the value of this property is a reference to the function itself, not a string containing the function's name.
+
+![image](https://github.com/user-attachments/assets/abda707f-93e4-4e67-8f2e-b8e473ddcb87)
+
+![image](https://github.com/user-attachments/assets/8c7c51d3-06ba-4131-8357-44bf8e7ddd30)
+
 ## Method overriding
 
 The prototype of object and function are different.The prototype of an object (Object.prototype) provides methods for all objects, like toString() and hasOwnProperty(), while the prototype of a function (Function.prototype) provides methods specifically for functions, like call() and apply().
