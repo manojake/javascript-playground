@@ -3,6 +3,7 @@
 - [Useful string methods](#useful-string-methods)
 - [Arrays](#arrays)
   - [For of](#for-of)
+  - [dont use for in](#dont-use-for-in)
 - [Anonymous functions](#anonymous-functions)
 - [Javascript Objects](#javascript-objects)
 - [Object prototypes](#object-prototypes)
@@ -79,6 +80,12 @@ An array can be cleared by setting it's length to 0
 ## For of
 
 ![image](https://github.com/manojake/javascript-playground/assets/68778250/5c1064ed-d369-4a3d-8be0-16a2192f5546)
+
+## dont use for in
+
+Using for-in for arrays can cause issues because it iterates over all enumerable properties, not just array elements, and doesn't guarantee the order of iteration. It’s better to use a for, for-of, or forEach loop when dealing with arrays.
+
+![image](https://github.com/user-attachments/assets/647b93b1-4d27-45c1-b3af-94f5bd97d238)
 
 # Anonymous functions
 
