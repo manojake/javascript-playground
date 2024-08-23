@@ -184,7 +184,35 @@ Box.prototype is literally an object and you can ssign functions to it if you wa
 ![image](https://github.com/user-attachments/assets/093db5ab-7567-4a09-99a7-30cb6433401a)
 
 
-Use _Object.setPrototypeOf()_ to build longer inheritance chain.
+Use _Object.setPrototypeOf()_ to build longer inheritance chain. Look at the example below.
+The obj object instance will have access to Human and AncientCreature methods throgh prototype inheritance.
+
+![image](https://github.com/user-attachments/assets/64cdd89b-e9c4-4040-89cf-966d3da84b83)
+
+
+As we know, Object.getprototypeOf(obj) will be Human.prototype and Object.getPrototypeOf(obj) === Human.prototype will yield true.
+
+But Human.prototype is not equal to Apes.prototype. They are still different.
+
+Now look at the prototype chain below 
+
+![image](https://github.com/user-attachments/assets/d701c0b0-8306-420c-b9df-1df438174cd0)
+
+Here the prototype of obj is obviously Human.prototype. It's not a plain object. It has getHumanLaugh method and constructor which is the Human function constructor itself.
+
+Now Object.getprototypeOf(Human.prototype) will be Apes.prototype which has getApeLaugh and Apes contructor function itself. This is how the prototype chaining works.
+
+`Class Human extends Apes` is achieved by this mechanism. Hence classes are just sugar coating on the prototype inheritance.
+
+The Human function contructor can also be represented as 
+
+```
+Class human {
+  getHumanLaugh() {
+    
+  }
+}
+```
 
 # Classes and constructors
 
