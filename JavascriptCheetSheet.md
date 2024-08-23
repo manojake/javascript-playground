@@ -15,6 +15,7 @@
     - [Using a constructor](#using-a-constructor)
   - [Method overriding](#method-overriding)
   - [Building longer inheritance chains](#building-longer-inheritance-chains)
+  - [Different ways of creating and mutating prototype chains](#different-ways-of-creating-and-mutating-prototype-chains)
 - [Classes and constructors](#classes-and-constructors)
 - [Inheritance](#inheritance)
 - [Encapsulation](#encapsulation)
@@ -213,6 +214,9 @@ Class human {
   }
 }
 ```
+## Different ways of creating and mutating prototype chain
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#different_ways_of_creating_and_mutating_prototype_chains
 
 # Classes and constructors
 
