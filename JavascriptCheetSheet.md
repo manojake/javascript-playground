@@ -47,6 +47,7 @@
 - [Meta programming](#meta-programming)
 - [Data structures](#data-structures)
 - [Memory management](#memory-management)
+- [The event loop](#the-event-loop)
 
 # Operator precedence
 
@@ -488,3 +489,7 @@ Eg: Array, Object, Set, Map
 
 # Memory management
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management
+
+# The event loop
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
