@@ -39,7 +39,7 @@ Scenario
 You have an Express route handler that triggers a database query using a promise-based approach (e.g., using a library like knex, mongoose, or pg-promise). The I/O operation (database query) is initiated by the promise. Here's an example:
 
 js
-
+```
 app.get('/data', (req, res) => {
   Promise.resolve()
     .then(() => {
@@ -49,7 +49,7 @@ app.get('/data', (req, res) => {
       res.send(result);  // Once the I/O operation is done, send the response
     });
 });
-
+```
 Step-by-Step Breakdown
 1. Entering the Event Loop
 
