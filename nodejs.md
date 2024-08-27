@@ -56,13 +56,13 @@ Step-by-Step Breakdown
 The event loop is running and waiting for events (such as new HTTP requests) to arrive. When a request to /data comes in, the request handler is executed. Here's what happens next:
 2. Promise Microtask Starts
 
-    The code inside the route handler starts by creating a resolved promise using Promise.resolve().
+  The code inside the route handler starts by creating a resolved promise using Promise.resolve().
 
-    A .then() handler is attached to that promise.
+  A .then() handler is attached to that promise.
 
-    The .then() handler schedules a microtask. Remember, microtasks are executed after the current phase completes but before moving to the next phase.
+  The .then() handler schedules a microtask. Remember, microtasks are executed after the current phase completes but before moving to the next phase.
 
-    At this point, the event loop will continue executing other synchronous code, but it remembers that a microtask (the .then() callback) is scheduled to be executed soon.
+  At this point, the event loop will continue executing other synchronous code, but it remembers that a microtask (the .then() callback) is scheduled to be executed soon.
 
 3. Initiating the Database I/O Operation
 
@@ -76,7 +76,7 @@ The event loop is running and waiting for events (such as new HTTP requests) to 
 
 After the microtask (the .then() callback) initiates the database query:
 
-    If there are no more microtasks: The event loop proceeds to the next phase (e.g., timers, I/O callbacks, poll, etc.).
+  If there are no more microtasks: The event loop proceeds to the next phase (e.g., timers, I/O callbacks, poll, etc.).
     If there are more microtasks: Node.js will finish processing them before moving to the next phase.
 
 In our scenario, after the database query is initiated, there are no more microtasks to process, so the event loop moves on.
@@ -85,23 +85,23 @@ Next Phases While I/O is Pending
 
 The event loop enters the poll phase, where it waits for I/O events to complete.
 
-    If other events (like timers or other incoming requests) occur, the event loop will handle those while still keeping track of the database I/O operation.
+  If other events (like timers or other incoming requests) occur, the event loop will handle those while still keeping track of the database I/O operation.
     Polling for I/O: The database query runs in the background, and the event loop continues to poll for the result of the query.
 
 6. Database I/O Completes
 
 When the database query completes, the kernel/libuv notifies Node.js that the operation has finished. Node.js then schedules a callback to handle the result.
 
-    The callback for the database query is placed in the tasks queue (not the microtasks queue, since this is an I/O callback).
+  The callback for the database query is placed in the tasks queue (not the microtasks queue, since this is an I/O callback).
     The event loop will eventually reach the I/O callbacks phase or another appropriate phase to execute the callback associated with the completed I/O operation.
 
 7. Processing the I/O Callback
 
 When the event loop reaches the I/O callbacks phase, it picks up the callback for the completed database query.
 
-    Inside the callback, the promise resolves with the result of the query, and the next .then() in the promise chain is scheduled as a microtask.
+  Inside the callback, the promise resolves with the result of the query, and the next .then() in the promise chain is scheduled as a microtask.
 
-    Microtasks take priority: After the current phase completes, the event loop will process this microtask (the .then() callback).
+  Microtasks take priority: After the current phase completes, the event loop will process this microtask (the .then() callback).
 
 8. Sending the Response
 
@@ -111,7 +111,7 @@ The microtask runs, sending the response to the client using res.send(result).
 
 Summary of the Workflow
 
-    Step 1: HTTP Request Arrives: The event loop picks up the request, and the route handler initiates a promise that triggers a database I/O operation.
+  Step 1: HTTP Request Arrives: The event loop picks up the request, and the route handler initiates a promise that triggers a database I/O operation.
     Step 2: Database Query Initiated: The I/O operation runs asynchronously in the background, freeing the event loop to move to the next phase. The event loop does not block and continues to process other tasks.
     Step 3: Event Loop Continues: While the I/O operation is pending, the event loop processes other tasks (timers, incoming HTTP requests, etc.) and waits for the I/O operation to complete in the poll phase.
     Step 4: I/O Completes: Once the database query finishes, the I/O callback is placed in the task queue and will be processed in the appropriate phase.
@@ -120,7 +120,7 @@ Summary of the Workflow
 
 Key Takeaways
 
-    The event loop is never blocked waiting for I/O: While the database I/O operation is pending, the event loop proceeds to handle other tasks and requests.
+   The event loop is never blocked waiting for I/O: While the database I/O operation is pending, the event loop proceeds to handle other tasks and requests.
     Microtasks (like promise .then() callbacks) are executed between event loop phases: Once initiated, the I/O operation doesn’t block the event loop. Microtasks are processed after each phase but before the event loop moves to the next phase.
     I/O callbacks are handled in specific event loop phases: When the database query completes, its callback is placed in the task queue and will be processed during the appropriate I/O-related phase of the event loop.
     Concurrency: Multiple requests can be handled concurrently. While one request is waiting on an I/O operation, the event loop continues processing other requests.
