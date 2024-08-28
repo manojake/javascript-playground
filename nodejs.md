@@ -1,6 +1,7 @@
 - [Dev vs Prod](#dev-vs-prod)
 - [Profiling Node app](#profiling-node-app)
 - [Phases of eventloop](#phases-of-eventloop)
+- [NextTick vs Promise](nexttick-vs-promise)
 
 # Dev vs Prod
 
@@ -132,3 +133,9 @@ My takeaway from this is that the timers phase will execute all the eligible tim
 If a setImmediate is scheduled alongside multiple setTimeout calls, the event loop will process the timers phase first, executing the eligible timers and interleaving microtasks after each callback. After the timers phase is complete, the event loop will move to the check phase to execute the setImmediate callback. It generally does not execute multiple timer phases before the check phase unless new timers are constantly scheduled within the same event loop iteration.
 
 Micro tasks are executed right after the current operation of eventloop. Be it the main thread or the current timer call back in the first phase that is being executed.
+
+# NextTick vs Promise
+
+process.nextTick() takes priority over Promises if they are both scheduled from synchronous code. This means that when both nextTick and Promise microtasks are scheduled from the same synchronous block, nextTick will always be processed first.
+
+If process.nextTick() and Promises are scheduled from within a microtask (like another nextTick or Promise.then()), their order of execution will follow the order in which they are added. Whichever is scheduled first will take precedence. This is because they are in the same microtask queue, and the queue is processed in the order tasks are queued.
