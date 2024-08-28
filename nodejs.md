@@ -1,6 +1,6 @@
-[Dev vs Prod](#dev-vs-prod)
-[Profiling Node app](#profiling-node-app)
-[Phases of eventloop](#phases-of-eventloop)
+- [Dev vs Prod](#dev-vs-prod)
+- [Profiling Node app](#profiling-node-app)
+- [Phases of eventloop](#phases-of-eventloop)
 
 # Dev vs Prod
 
