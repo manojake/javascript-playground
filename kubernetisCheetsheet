@@ -34,6 +34,10 @@ kubectl config get-contexts
 
 kubectl config use-context NAMESPACE
 
+# See current context
+
+kubectl config current-context
+
 # see the deployemnts under a namespace
 
 kubectl get deployment --namespace=NAMESPACE
