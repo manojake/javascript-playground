@@ -32,7 +32,7 @@ kubectl config get-contexts
 
 # Set context
 
-kubectl config set-context NAMESPACE
+kubectl config use-context NAMESPACE
 
 # see the deployemnts under a namespace
 
