@@ -10,17 +10,14 @@ echo  $(<rewards-cred-stage.json) | base64
 # Encode the edited secret value by avoiding new line and line breaks
 verify echo -n $(<rewards-cred-stage.json) | base64 | tr -d \\n
 
-# if you encoding plain string make sure tp -n tp avoid adding newline
+# Apply the newly generated encoded value back kubernetis
+kubectl get secret rewards-credentials --namespace telus-rewards -o json | jq '.data["credentials"]="NEW_BASE64_ENCODED_VALUE"' | kubectl apply -f -
+
+# if you encoding plain string make sure tp -n tp avoid adding newline for basic-auth
 echo -n "PLAIN_STRING" | base64 
 
-# Apply the newly generated encoded value back kubernetis
-kubectl get secret rewards-credentials --namespace telus-rewards -o json | jq '.data["rewards-credentials"]="NEW_BASE64_ENCODED_VALUE"' | kubectl apply -f -
-
-
-
-
-
-
+# Apply the newly generated encoded string value back kubernetis
+kubectl get secret rewards-credentials --namespace telus-rewards -o json | jq '.data=JSON' | kubectl apply -f -
 
 
 
